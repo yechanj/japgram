@@ -1252,3 +1252,85 @@ ul.clean li::before {
   .place2 { grid-template-columns: 1fr; }
   .pcards { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* =========================================================
+   =============  LESSON 5 전용 컴포넌트  ================
+   あります / います · に / が · 존재문
+   ========================================================= */
+
+/* あります vs います (Priority 1) */
+.exist2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.existcard {
+  border: 1px solid var(--line); border-radius: 16px; padding: 18px 16px;
+  text-align: center; background: var(--surface);
+}
+.existcard.is-mono { border-top: 3px solid var(--brand); }
+.existcard.is-anim { border-top: 3px solid var(--info); }
+.existcard__emojis { font-size: 30px; line-height: 1.4; letter-spacing: 4px; }
+.existcard__verb { font-family: var(--font-jp); font-size: clamp(24px, 6vw, 32px); font-weight: 700; margin: 8px 0 2px; }
+.existcard.is-mono .existcard__verb { color: var(--brand-dark); }
+.existcard.is-anim .existcard__verb { color: var(--info); }
+.existcard__label { font-size: 13px; color: var(--ink-soft); font-weight: 700; }
+.existcard__ex { font-family: var(--font-jp); font-size: 13px; color: var(--ink-faint); margin-top: 8px; }
+.exist2__note {
+  grid-column: 1 / -1; text-align: center; font-weight: 700; color: var(--brand-dark);
+  background: var(--brand-soft); border-radius: 12px; padding: 12px 14px; font-size: 14px;
+}
+.exist2__note b { color: var(--info); }
+
+/* 질문 → 답 (は vs が, 질문이 구조를 결정) (Priority 3) */
+.qa2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.qacard {
+  border: 1px solid var(--line); border-radius: 16px; padding: 16px; background: var(--surface);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.qacard__tag {
+  font-family: var(--font-cute); font-size: 12px; font-weight: 700; letter-spacing: .05em;
+  align-self: flex-start; border-radius: 999px; padding: 3px 12px;
+}
+.qacard.is-ga { border-top: 3px solid var(--info); }
+.qacard.is-ga .qacard__tag { background: var(--info-soft); color: var(--info); }
+.qacard.is-wa { border-top: 3px solid var(--particle); }
+.qacard.is-wa .qacard__tag { background: var(--particle-soft); color: var(--particle); }
+.qacard__q { font-family: var(--font-jp); font-size: 15px; font-weight: 700; background: var(--surface-2); border-radius: 10px; padding: 9px 12px; }
+.qacard__q .ko { display: block; font-family: var(--font-body); font-size: 12px; color: var(--ink-faint); font-weight: 500; margin-top: 2px; }
+.qacard__arrow { text-align: center; color: var(--ink-faint); font-size: 18px; }
+.qacard__a { font-family: var(--font-jp); font-size: clamp(18px, 4.6vw, 22px); font-weight: 700; text-align: center; }
+.qacard__a .hl-ga { color: var(--info); background: var(--info-soft); border-radius: 5px; padding: 0 5px; }
+.qacard__a .hl-wa { color: var(--particle); background: var(--particle-soft); border-radius: 5px; padding: 0 5px; }
+.qacard__a .ko { display: block; font-family: var(--font-body); font-size: 12.5px; color: var(--ink-soft); font-weight: 500; margin-top: 4px; }
+.qa2__note {
+  grid-column: 1 / -1; text-align: center; font-weight: 700; color: var(--brand-dark);
+  background: var(--brand-soft); border-radius: 12px; padding: 12px 14px; font-size: 14px;
+}
+
+/* 공간 위치 (Priority 5, 인터랙티브) */
+.spatial { text-align: center; }
+.spatial__center {
+  font-family: var(--font-jp); font-size: clamp(24px, 7vw, 34px); font-weight: 700;
+  background: var(--surface-2); border: 1.5px solid var(--line-strong); border-radius: 14px;
+  display: inline-block; padding: 12px 30px; margin-bottom: 14px;
+}
+.spatial__words { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-bottom: 14px; }
+.locbtn {
+  font-family: var(--font-jp); font-weight: 700; font-size: clamp(15px, 3.6vw, 18px); cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink);
+  border-radius: 10px; padding: 10px 4px; transition: all .15s;
+}
+.locbtn:hover { border-color: var(--brand); color: var(--brand-dark); }
+.locbtn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.spatial__out {
+  background: var(--brand-softer); border: 1.5px solid var(--brand-soft); border-radius: 14px; padding: 18px 14px;
+}
+.spatial__jp { font-family: var(--font-jp); font-size: clamp(20px, 5.5vw, 26px); font-weight: 700; }
+.spatial__jp .pt { color: var(--particle); }
+.spatial__ko { font-size: 14px; color: var(--ink-soft); margin-top: 6px; }
+
+/* samenoun 버튼 여러 개일 때 줄바꿈 허용 */
+.samenoun__btns { flex-wrap: wrap; }
+
+@media (max-width: 480px) {
+  .exist2 { grid-template-columns: 1fr; }
+  .qa2 { grid-template-columns: 1fr; }
+  .spatial__words { grid-template-columns: repeat(3, 1fr); }
+}

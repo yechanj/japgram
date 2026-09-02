@@ -340,6 +340,23 @@
     });
   }
 
+  /* ---------- 15. 공간 위치 (위/아래/안 … → 예문) ---------- */
+  function initSpatial() {
+    document.querySelectorAll("[data-spatial]").forEach(function (root) {
+      var jpEl = root.querySelector("[data-sp-jp]");
+      var koEl = root.querySelector("[data-sp-ko]");
+      var btns = root.querySelectorAll(".locbtn");
+      function apply(b) {
+        if (jpEl) jpEl.innerHTML = b.getAttribute("data-jp");
+        if (koEl) koEl.textContent = b.getAttribute("data-ko");
+        btns.forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+      }
+      btns.forEach(function (b) { b.addEventListener("click", function () { apply(b); }); });
+      if (btns.length) apply(btns[0]);
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -356,5 +373,6 @@
     initRecall();
     initNested();
     initSameNoun();
+    initSpatial();
   });
 })();
