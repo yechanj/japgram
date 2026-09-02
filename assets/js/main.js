@@ -307,6 +307,18 @@
     });
   }
 
+  /* ---------- 13. Nested Sentence (문장을 더 잘게 나누기) ---------- */
+  function initNested() {
+    document.querySelectorAll("[data-nested]").forEach(function (root) {
+      var btn = root.querySelector("[data-nested-btn]");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var exp = root.classList.toggle("expanded");
+        btn.textContent = exp ? "다시 합치기" : "조각으로 더 잘게 나누기 →";
+      });
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -321,5 +333,6 @@
     initFurigana();
     initTransformer();
     initRecall();
+    initNested();
   });
 })();
