@@ -262,6 +262,51 @@
     window.addEventListener("scroll", hide, { passive: true });
   }
 
+  /* ---------- 11. Sentence Transformer (시제 × 긍정/부정) ---------- */
+  function initTransformer() {
+    var JP_END = {
+      "now-pos": "です", "now-neg": "ではありません",
+      "past-pos": "でした", "past-neg": "ではありませんでした"
+    };
+    var KO_END = {
+      "now-pos": "입니다.", "now-neg": "이 아닙니다.",
+      "past-pos": "이었습니다.", "past-neg": "이 아니었습니다."
+    };
+    document.querySelectorAll("[data-transformer]").forEach(function (root) {
+      var stemJp = root.getAttribute("data-stem-jp") || "";
+      var stemKo = root.getAttribute("data-stem-ko") || "";
+      var jpEl = root.querySelector("[data-tr-jp]");
+      var koEl = root.querySelector("[data-tr-ko]");
+      var state = { tense: "now", pol: "pos" };
+      function render() {
+        var key = state.tense + "-" + state.pol;
+        if (jpEl) jpEl.innerHTML = stemJp + "<span class='chg'>" + JP_END[key] + "</span>";
+        if (koEl) koEl.textContent = stemKo + KO_END[key];
+      }
+      root.querySelectorAll(".tgroup").forEach(function (g) {
+        var dim = g.getAttribute("data-dim"); // "tense" or "pol"
+        g.querySelectorAll(".toggle").forEach(function (b) {
+          b.addEventListener("click", function () {
+            state[dim] = b.getAttribute("data-val");
+            g.querySelectorAll(".toggle").forEach(function (x) { x.classList.remove("active"); });
+            b.classList.add("active");
+            render();
+          });
+        });
+      });
+      render();
+    });
+  }
+
+  /* ---------- 12. 10초 복습 카드 (탭하면 일본어 펼침) ---------- */
+  function initRecall() {
+    document.querySelectorAll(".recall__card").forEach(function (card) {
+      card.addEventListener("click", function () {
+        card.classList.toggle("revealed");
+      });
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -274,5 +319,7 @@
     initTransform();
     initAnatomy();
     initFurigana();
+    initTransformer();
+    initRecall();
   });
 })();

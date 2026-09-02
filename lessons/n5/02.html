@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 2 · 아니다 · 이었다 · 아니었다 「명사문의 긍정/부정/과거 + も」 — JLPT N5 문법</title>
+  <meta name="description" content="명사문을 です·ではありません·でした·ではありませんでした로 변형하고, 조사 も(~도)까지 배우는 N5 문법 강의" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <!-- 모바일 상단바 -->
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">Lesson 2 · 긍정/부정/과거</div>
+    <span class="topbar__prog" data-prog-txt>1 / 18</span>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo jp">で</div>
+        <div class="sidebar__title">JLPT N5 문법
+          <small>Lesson 2 · 긍정·부정·과거 + も</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#intro"><span class="num">0</span> 배우는 것</a></li>
+          <li><a href="#overview"><span class="num">1</span> 네 가지 명사문</a></li>
+          <li><a href="#desu"><span class="num">2</span> 기본형 ～です</a></li>
+          <li><a href="#negative"><span class="num">3</span> 부정 ～ではありません</a></li>
+          <li><a href="#janai"><span class="num">4</span> では vs じゃ</a></li>
+          <li><a href="#past"><span class="num">5</span> 과거 ～でした</a></li>
+          <li><a href="#pastneg"><span class="num">6</span> 과거 부정</a></li>
+          <li><a href="#axis"><span class="num">7</span> 2개의 축</a></li>
+          <li><a href="#transformer"><span class="num">8</span> Sentence Transformer</a></li>
+          <li><a href="#mo"><span class="num">9</span> 「も」 = ~도</a></li>
+          <li><a href="#hamo"><span class="num">10</span> は vs も</a></li>
+          <li><a href="#examples"><span class="num">11</span> 대표 예문</a></li>
+          <li><a href="#mistakes"><span class="num">12</span> 헷갈리는 부분</a></li>
+          <li><a href="#anatomy"><span class="num">13</span> 문장 해부</a></li>
+          <li><a href="#growth"><span class="num">14</span> 문법 성장</a></li>
+          <li><a href="#quiz"><span class="num">15</span> Check Quiz</a></li>
+          <li><a href="#summary"><span class="num">16</span> 핵심 · 10초 복습</a></li>
+          <li><a href="#next"><span class="num">17</span> 다음 Lesson</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <!-- 본문 -->
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">JLPT N5 Grammar · Lesson 2</div>
+          <h1>아니다 · 이었다 · 아니었다</h1>
+          <div class="lesson-hero__pattern jp">です <span class="pt">/</span> ではありません <span class="pt">/</span> でした</div>
+          <div class="progress">
+            <div class="progress__bar"><div class="progress__fill"></div></div>
+            <span class="progress__txt" data-prog-txt>1 / 18</span>
+          </div>
+        </header>
+
+        <!-- ============ 0 · 배우는 것 ============ -->
+        <section id="intro" class="section">
+          <h2><span class="sec-no">00</span> 이번 강에서 배우는 것</h2>
+          <p class="lead">Lesson 1에서 배운 <b class="jp">A<span class="pt">は</span>Bです</b>를 바꿔서
+            <b>~입니다 / ~이 아닙니다 / ~이었습니다 / ~이 아니었습니다</b>를 표현합니다.</p>
+          <ul class="goals">
+            <li><span class="jp">学生です。</span> — 학생입니다.</li>
+            <li><span class="jp">学生ではありません。</span> — 학생이 아닙니다.</li>
+            <li><span class="jp">学生でした。</span> — 학생이었습니다.</li>
+            <li><span class="jp">学生ではありませんでした。</span> — 학생이 아니었습니다.</li>
+          </ul>
+          <div class="oneline">또한 <b class="jp" style="color:var(--info)">も</b> = ~도 를 배워서
+            <b class="jp">私も学生です。</b>(저도 학생입니다) 같은 문장을 만들 수 있게 됩니다.</div>
+        </section>
+
+        <!-- ============ 1 · 복습 + 네 가지 명사문 ============ -->
+        <section id="overview" class="section">
+          <h2><span class="sec-no">01</span> 지난 강 복습 · 네 가지 명사문</h2>
+          <p>Lesson 1에서 배운 문장 <b class="jp">私は学生です。</b>(저는 학생입니다). 구조는
+            <b class="jp">私は</b>(화제) ｜ <b class="jp">学生です</b>(정보) 였습니다.
+            이번 강에서는 앞부분 <b class="jp">私は</b>는 그대로 두고, <b>뒤의 끝맺음만</b> 바꿉니다.</p>
+
+          <!-- 시각화 1 · 4-Way Grammar Grid (Priority 1) -->
+          <div class="figure">
+            <div class="figure__title">시각화 1 · 같은 문장의 네 가지 모습</div>
+            <div class="fourway">
+              <div class="fourway__center jp">私は<span class="furi" data-yomi="がくせい">学生</span>です。</div>
+              <div class="fw">
+                <div class="fw__label"><span class="b">●</span> 현재 · 긍정</div>
+                <div class="fw__jp jp">私は学生<span class="chg">です</span>。</div>
+                <div class="fw__ko">저는 학생입니다.</div>
+              </div>
+              <div class="fw">
+                <div class="fw__label"><span class="r">●</span> 현재 · 부정</div>
+                <div class="fw__jp jp">私は学生<span class="chg chg--neg">ではありません</span>。</div>
+                <div class="fw__ko">저는 학생이 아닙니다.</div>
+              </div>
+              <div class="fw">
+                <div class="fw__label"><span class="b">●</span> 과거 · 긍정</div>
+                <div class="fw__jp jp">私は学生<span class="chg">でした</span>。</div>
+                <div class="fw__ko">저는 학생이었습니다.</div>
+              </div>
+              <div class="fw">
+                <div class="fw__label"><span class="r">●</span> 과거 · 부정</div>
+                <div class="fw__jp jp">私は学生<span class="chg chg--neg">ではありませんでした</span>。</div>
+                <div class="fw__ko">저는 학생이 아니었습니다.</div>
+              </div>
+            </div>
+            <div class="figure__cap">변하지 않는 부분 <b class="jp">私は学生</b> ｜ 변하는 부분 <b class="jp">です · ではありません · でした · ではありませんでした</b>.
+              문장 끝을 바꾸면 시제와 긍정/부정이 바뀝니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 2 · ～です ============ -->
+        <section id="desu" class="section">
+          <h2><span class="sec-no">02</span> 기본형: ～です</h2>
+          <div class="gpat">
+            <div class="gpat__label">Grammar Pattern</div>
+            <div class="gpat__row"><span class="jp" style="font-size:clamp(24px,7vw,38px);font-weight:700;">명사 ＋ <span class="chg">です</span></span></div>
+            <div class="gpat__mean">~입니다.</div>
+          </div>
+          <ul class="clean">
+            <li><span class="jp"><span class="furi" data-yomi="がくせい">学生</span>です。</span> — 학생입니다.</li>
+            <li><span class="jp"><span class="furi" data-yomi="せんせい">先生</span>です。</span> — 선생님입니다.</li>
+            <li><span class="jp"><span class="furi" data-yomi="やすみ">休み</span>です。</span> — 휴일입니다 / 쉬는 날입니다.</li>
+          </ul>
+          <div class="ex">
+            <div class="ex__jp jp">田中さん<span class="pt">は</span><span class="furi" data-yomi="せんせい">先生</span>です。</div>
+            <div class="ex__ko">다나카 씨는 선생님입니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 3 · 부정 ～ではありません ============ -->
+        <section id="negative" class="section">
+          <h2><span class="sec-no">03</span> 부정: ～ではありません</h2>
+          <p>“~이 아닙니다”라고 말하려면 <b class="jp">ではありません</b>을 사용합니다.</p>
+          <div class="gpat">
+            <div class="gpat__label">Grammar Pattern</div>
+            <div class="gpat__row"><span class="jp" style="font-size:clamp(19px,5vw,26px);font-weight:700;">명사 ＋ <span class="chg chg--neg">ではありません</span></span></div>
+            <div class="gpat__mean">~이 아닙니다.</div>
+          </div>
+
+          <!-- 시각화 2 · 긍정 → 부정 -->
+          <div class="figure">
+            <div class="figure__title">시각화 2 · 긍정 → 부정</div>
+            <div class="transform">
+              <div class="transform__jp jp">私は学生<span class="chg">です</span>。<span class="ko">저는 학생입니다.</span></div>
+              <div class="transform__arrow">↓</div>
+              <div class="transform__op"><span class="jp">です</span> 부분을 교체</div>
+              <div class="transform__arrow">↓</div>
+              <div class="transform__jp jp">私は学生<span class="chg chg--neg">ではありません</span>。<span class="ko">저는 학생이 아닙니다.</span></div>
+            </div>
+            <div class="figure__cap"><span class="jp">私は ｜ 学生 ｜ ではありません</span> = 화제 ｜ 명사 ｜ 아니다. 변화한 부분만 강조합니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 4 · では vs じゃ ============ -->
+        <section id="janai" class="section">
+          <h2><span class="sec-no">04</span> 「じゃありません」도 많이 쓴다</h2>
+          <p>실제 일본어에서는 <b class="jp">ではありません</b> 대신 <b class="jp">じゃありません</b>도 매우 자주 사용합니다. 뜻은 거의 같습니다.</p>
+          <div class="vs2">
+            <div class="vs2__col is-ha">
+              <div class="vs2__head jp" style="color:var(--brand-dark)">기본형</div>
+              <div class="vs2__jp jp">学生<span class="chg chg--neg">ではありません</span>。</div>
+              <div class="vs2__ko">학생이 아닙니다.</div>
+              <div class="vs2__desc">기본적이고 조금 더 정중한 느낌</div>
+            </div>
+            <div class="vs2__col is-mo">
+              <div class="vs2__head jp" style="color:var(--info)">회화형</div>
+              <div class="vs2__jp jp">学生<span class="chg chg--neg">じゃありません</span>。</div>
+              <div class="vs2__ko">학생이 아닙니다.</div>
+              <div class="vs2__desc">일상 대화에서 흔함</div>
+            </div>
+          </div>
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>무엇을 먼저 외울까</div>
+            <p>교재의 기본형은 <b class="jp">ではありません</b>으로 사용하고, 회화에서 <b class="jp">じゃありません</b>도 자주 쓰인다는 것을
+              함께 기억하면 됩니다. N5 단계에서 둘의 미묘한 뉘앙스 차이를 깊게 공부할 필요는 없습니다.</p>
+          </div>
+        </section>
+
+        <!-- ============ 5 · 과거 ～でした ============ -->
+        <section id="past" class="section">
+          <h2><span class="sec-no">05</span> 과거: ～でした</h2>
+          <p>“~이었습니다”라고 말하려면 <b class="jp">でした</b>를 사용합니다. <b class="jp">です → でした</b>로 바꾸면 과거가 됩니다.</p>
+
+          <!-- 시각화 3 · 시간 이동 -->
+          <div class="figure">
+            <div class="figure__title">시각화 3 · 시간 이동</div>
+            <div class="topicflow">
+              <div class="tinfo is-info" style="border-color:var(--brand);background:var(--brand-soft)">
+                <div class="tinfo__tag" style="color:var(--brand-dark)">NOW · 현재</div>
+                <div class="tinfo__jp jp">学生<span class="chg">です</span></div>
+                <div class="tinfo__desc">학생입니다</div>
+              </div>
+              <div class="topicflow__arrow">→</div>
+              <div class="tinfo is-topic" style="border-color:var(--warn);background:var(--warn-soft)">
+                <div class="tinfo__tag" style="color:var(--warn-ink)">PAST · 과거</div>
+                <div class="tinfo__jp jp">学生<span class="chg">でした</span></div>
+                <div class="tinfo__desc">학생이었습니다</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ex">
+            <div class="ex__no">Example</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="きのう">昨日</span><span class="pt">は</span><span class="furi" data-yomi="やすみ">休み</span><span class="chg">でした</span>。</div>
+            <div class="ex__ko">어제는 휴일이었습니다.</div>
+            <div class="ex__reading">읽기 · <b>昨日</b>【きのう】 · <b>休み</b>【やすみ】</div>
+          </div>
+        </section>
+
+        <!-- ============ 6 · 과거 부정 ============ -->
+        <section id="pastneg" class="section">
+          <h2><span class="sec-no">06</span> 과거 부정: ～ではありませんでした</h2>
+          <p>“~이 아니었습니다”라고 말해봅니다. 현재 부정 <b class="jp">ではありません</b>에 <b class="jp">でした</b>를 이어 붙입니다.</p>
+          <div class="gpat">
+            <div class="gpat__label">Grammar Pattern</div>
+            <div class="gpat__row"><span class="jp" style="font-size:clamp(16px,4.4vw,24px);font-weight:700;">명사 ＋ <span class="chg chg--neg">ではありませんでした</span></span></div>
+            <div class="gpat__mean">~이 아니었습니다.</div>
+          </div>
+          <div class="ex">
+            <div class="ex__jp jp"><span class="furi" data-yomi="きのう">昨日</span><span class="pt">は</span><span class="furi" data-yomi="やすみ">休み</span><span class="chg chg--neg">ではありませんでした</span>。</div>
+            <div class="ex__ko">어제는 휴일이 아니었습니다.</div>
+            <div class="ex__struct">
+              <div class="ex__row is-topic"><span class="k jp">昨日は</span><span class="v">어제는 (화제)</span></div>
+              <div class="ex__row is-info"><span class="k jp">休み</span><span class="v">휴일 (정보)</span></div>
+              <div class="ex__row" style="border-left:0"><span class="k jp" style="color:var(--warn)">ではありませんでした</span><span class="v">아니었습니다 (과거+부정)</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 7 · 2개의 축 ============ -->
+        <section id="axis" class="section">
+          <h2><span class="sec-no">07</span> 2개의 축으로 이해하기</h2>
+          <p>이 네 가지를 각각 독립적으로 외우지 않습니다. 머릿속에서 <b>현재 ↔ 과거</b>, <b>긍정 ↔ 부정</b>이라는
+            두 축으로 이해합니다.</p>
+
+          <!-- 시각화 4 · 2-Axis Grammar Map (Priority 2) -->
+          <div class="figure">
+            <div class="figure__title">시각화 4 · 두 축 지도</div>
+            <div class="axismap">
+              <div class="axismap__row">
+                <div class="axismap__rowlabel">현재</div>
+                <div class="axismap__pair">
+                  <div class="axcell pos"><div class="axcell__tag">긍정</div><span class="axcell__jp jp">です</span></div>
+                  <div class="axismap__vs">↔</div>
+                  <div class="axcell neg"><div class="axcell__tag">부정</div><span class="axcell__jp jp">ではありません</span></div>
+                </div>
+              </div>
+              <div class="axismap__down">↓ 과거로</div>
+              <div class="axismap__row">
+                <div class="axismap__rowlabel">과거</div>
+                <div class="axismap__pair">
+                  <div class="axcell pos"><div class="axcell__tag">긍정</div><span class="axcell__jp jp">でした</span></div>
+                  <div class="axismap__vs">↔</div>
+                  <div class="axcell neg"><div class="axcell__tag">부정</div><span class="axcell__jp jp">ではありませんでした</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap">현재+긍정 <b class="jp">です</b> · 현재+부정 <b class="jp">ではありません</b> ·
+              과거+긍정 <b class="jp">でした</b> · 과거+부정 <b class="jp">ではありませんでした</b></div>
+          </div>
+        </section>
+
+        <!-- ============ 8 · Sentence Transformer ============ -->
+        <section id="transformer" class="section">
+          <h2><span class="sec-no">08</span> Sentence Transformer</h2>
+          <p>아래 <b>시제</b>와 <b>문장</b>을 눌러 문장이 어떻게 바뀌는지 관찰하세요. 정답/오답이 없는 <b>문법 구조 관찰용</b>입니다.</p>
+
+          <!-- 시각화 5 · Sentence Transformer (Priority 3) -->
+          <div class="figure" data-transformer data-stem-jp="学校は休み" data-stem-ko="학교는 휴일">
+            <div class="figure__title">시각화 5 · 문장 변형기</div>
+            <div class="transformer__display">
+              <div class="transformer__jp jp" data-tr-jp></div>
+              <div class="transformer__ko" data-tr-ko></div>
+            </div>
+            <div class="tgroups">
+              <div class="tgroup" data-dim="tense">
+                <div class="tgroup__title">시제</div>
+                <div class="tgroup__btns">
+                  <button class="toggle active" data-val="now">현재</button>
+                  <button class="toggle" data-val="past">과거</button>
+                </div>
+              </div>
+              <div class="tgroup" data-dim="pol">
+                <div class="tgroup__title">문장</div>
+                <div class="tgroup__btns">
+                  <button class="toggle active" data-val="pos">긍정</button>
+                  <button class="toggle" data-val="neg">부정</button>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap">기본 문장 <b class="jp">学校は休みです。</b>(학교는 휴일입니다) — 시간 표현과 충돌하지 않는 화제를 사용했습니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 9 · も ============ -->
+        <section id="mo" class="section">
+          <h2><span class="sec-no">09</span> 「も」 = ~도</h2>
+          <p>이제 새로운 조사 하나를 배웁니다. Lesson 1에서 <b class="jp pt">は</b>를 배웠다면, 이번에는
+            <b class="jp" style="color:var(--info)">も</b>(~도)를 배웁니다.</p>
+          <div class="gpat">
+            <div class="gpat__label">Grammar Pattern</div>
+            <div class="gpat__row"><span class="jp" style="font-size:clamp(24px,7vw,40px);font-weight:700;">A <span style="color:var(--info)">も</span> B です</span></div>
+            <div class="gpat__mean">A도 B입니다.</div>
+          </div>
+
+          <!-- 시각화 6 · は → も -->
+          <div class="figure">
+            <div class="figure__title">시각화 6 · は → も</div>
+            <div class="transform">
+              <div class="transform__jp jp">私<span class="pt">は</span>学生です。<span class="ko">저는 학생입니다.</span></div>
+              <div class="transform__arrow">↓ 다른 사람도 같은 정보 ↓</div>
+              <div class="transform__jp jp">田中さん<span style="color:var(--info);background:var(--info-soft);border-radius:6px;padding:0 6px;">も</span>学生です。<span class="ko">다나카 씨도 학생입니다.</span></div>
+            </div>
+            <div class="figure__cap"><b class="jp pt">は</b> → A에 대해 말한다 · <b class="jp" style="color:var(--info)">も</b> → A도 마찬가지다</div>
+          </div>
+
+          <div class="card card--point">
+            <div class="card__label"><span class="dot"></span>「も」는 부정·과거에서도 쓸 수 있다</div>
+            <p><b class="jp">田中さんも学生です。</b>(다나카 씨도 학생입니다) /
+              <b class="jp">田中さんも学生ではありません。</b>(다나카 씨도 학생이 아닙니다) /
+              <b class="jp">田中さんも学生でした。</b>(다나카 씨도 학생이었습니다).<br>
+              즉 <b class="jp">は · も</b>는 앞부분의 역할이고, <b class="jp">です · ではありません · でした</b>는 뒤쪽 정보를 조절합니다.</p>
+          </div>
+
+          <!-- 시각화 7 · 두 부분으로 나누기 -->
+          <div class="figure">
+            <div class="figure__title">시각화 7 · 앞부분 vs 뒷부분</div>
+            <div class="topicflow">
+              <div class="tinfo is-info" style="border-color:var(--info);background:var(--info-soft)">
+                <div class="tinfo__tag" style="color:var(--info)">앞부분</div>
+                <div class="tinfo__jp jp">田中さんも</div>
+                <div class="tinfo__desc">누구에 대해 · 어떤 관계로 이야기할지 결정</div>
+              </div>
+              <div class="topicflow__arrow">＋</div>
+              <div class="tinfo is-topic" style="border-color:var(--warn);background:var(--warn-soft)">
+                <div class="tinfo__tag" style="color:var(--warn-ink)">뒷부분</div>
+                <div class="tinfo__jp jp">学生でした</div>
+                <div class="tinfo__desc">무슨 정보인지 + 시제 결정</div>
+              </div>
+            </div>
+            <div class="figure__cap"><span class="jp">田中さんも学生でした。</span> — 이 구조는 앞으로 일본어 문장을 이해할 때 매우 중요합니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 10 · は vs も ============ -->
+        <section id="hamo" class="section">
+          <h2><span class="sec-no">10</span> 「は」와 「も」 비교</h2>
+
+          <!-- 시각화 · は vs も (Priority 4) -->
+          <div class="figure">
+            <div class="figure__title">시각화 8 · は vs も</div>
+            <div class="vs2">
+              <div class="vs2__col is-ha">
+                <div class="vs2__head jp">は</div>
+                <div class="vs2__jp jp">私<span class="hl-ha">は</span>学生です。</div>
+                <div class="vs2__ko">저는 학생입니다.</div>
+                <div class="vs2__desc">새로운 화제를 제시 — 그냥 “나”에 대해 이야기합니다.</div>
+              </div>
+              <div class="vs2__col is-mo">
+                <div class="vs2__head jp">も</div>
+                <div class="vs2__jp jp">田中さん<span class="hl-mo">も</span>学生です。</div>
+                <div class="vs2__ko">다나카 씨도 학생입니다.</div>
+                <div class="vs2__desc">앞의 대상과 <b>같은 정보</b>가 적용된다는 느낌.</div>
+              </div>
+            </div>
+            <div class="figure__cap"><b class="jp pt">は</b>와 <b class="jp" style="color:var(--info)">も</b> 부분만 같은 위치에서 강조하여 차이를 봅니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 11 · 대표 예문 ============ -->
+        <section id="examples" class="section">
+          <h2><span class="sec-no">11</span> 대표 예문</h2>
+
+          <div class="ex">
+            <div class="ex__no">Example 1</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="きょう">今日</span><span class="pt">は</span><span class="furi" data-yomi="やすみ">休み</span>です。</div>
+            <div class="ex__ko">오늘은 휴일입니다.</div>
+            <div class="ex__reading">읽기 · <b>今日</b>【きょう】 · <b>休み</b>【やすみ】</div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 2</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="きのう">昨日</span><span class="pt">は</span><span class="furi" data-yomi="やすみ">休み</span><span class="chg">でした</span>。</div>
+            <div class="ex__ko">어제는 휴일이었습니다.</div>
+            <div class="ex__reading">읽기 · <b>昨日</b>【きのう】</div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 3</div>
+            <div class="ex__jp jp">私<span class="pt">は</span><span class="furi" data-yomi="せんせい">先生</span><span class="chg chg--neg">ではありません</span>。</div>
+            <div class="ex__ko">저는 선생님이 아닙니다.</div>
+            <div class="ex__reading">읽기 · <b>先生</b>【せんせい】</div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 4</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="いもうと">妹</span><span style="color:var(--info)">も</span><span class="furi" data-yomi="がくせい">学生</span>です。</div>
+            <div class="ex__ko">여동생도 학생입니다.</div>
+            <div class="ex__reading">읽기 · <b>妹</b>【いもうと】 · <b>学生</b>【がくせい】</div>
+          </div>
+        </section>
+
+        <!-- ============ 12 · 헷갈리는 부분 ============ -->
+        <section id="mistakes" class="section">
+          <h2><span class="sec-no">12</span> 헷갈리는 부분</h2>
+          <div class="mistakes">
+            <div class="mistake">
+              <h5><span class="n">①</span> 과거라고 명사 자체가 변하지는 않는다</h5>
+              <p>현재 <b class="jp">学生です</b> → 과거 <b class="jp">学生<span class="chg">でした</span></b>.
+                「学生」은 그대로이고, 변하는 것은 뒤의 <b class="jp">です → でした</b>입니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">②</span> 부정도 명사 자체를 바꾸지 않는다</h5>
+              <p>긍정 <b class="jp">先生です</b> → 부정 <b class="jp">先生<span class="chg chg--neg">ではありません</span></b>.
+                「先生」은 그대로이고, 뒤쪽 표현만 바뀝니다.</p>
+            </div>
+          </div>
+
+          <!-- 시각화 9 · 고정 영역 vs 변화 영역 -->
+          <div class="figure">
+            <div class="figure__title">시각화 9 · 고정 영역 vs 변화 영역</div>
+            <div class="growth">
+              <div class="growth__item"><span class="growth__badge">현재·긍정</span><span class="growth__jp jp"><span class="furi" data-yomi="せんせい">先生</span> <span class="chg">です</span></span></div>
+              <div class="growth__item"><span class="growth__badge">현재·부정</span><span class="growth__jp jp">先生 <span class="chg chg--neg">ではありません</span></span></div>
+              <div class="growth__item"><span class="growth__badge">과거·긍정</span><span class="growth__jp jp">先生 <span class="chg">でした</span></span></div>
+              <div class="growth__item"><span class="growth__badge">과거·부정</span><span class="growth__jp jp">先生 <span class="chg chg--neg">ではありませんでした</span></span></div>
+            </div>
+            <div class="figure__cap"><b class="jp">先生</b>은 유지되고, 문장 끝만 활용됩니다 — <b>명사는 유지되고 문장 끝이 바뀐다</b>.</div>
+          </div>
+
+          <div class="card card--warn">
+            <div class="card__label"><span class="dot"></span>Warning · 지금은 명사문만 다룹니다</div>
+            <p><span class="okmark jp">○ 学生でした。</span> <span class="okmark jp">○ 先生でした。</span> 는 되지만,
+              <span class="wrongmark jp">× 食べるでした</span>처럼 동사에 붙이지 않습니다.
+              <b class="jp">学生でした</b>(명사문)와 나중에 배우는 <b class="jp">食べました</b>(동사문)는 겉모습은 비슷해도 구조가 다릅니다.
+              동사의 과거형은 Lesson 6에서 배웁니다.</p>
+          </div>
+
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>「じゃないです」는?</div>
+            <p>회화에서는 <b class="jp">学生じゃないです。</b>도 매우 자주 들립니다(= 학생이 아닙니다). 초급에서는 세 형태를 알아두면 충분합니다 —
+              기본 교재형 <b class="jp">ではありません</b> · 회화 <b class="jp">じゃありません</b> · 회화에서 매우 흔함 <b class="jp">じゃないです</b>.
+              단, 이번 강에서 직접 만드는 기본형은 <b class="jp">ではありません</b>으로 통일합니다.</p>
+          </div>
+
+          <div class="coming">
+            <div class="tag">COMING SOON · 「だ」는 아직 외우지 않아도 됩니다</div>
+            <div class="cjp jp">学生です <span style="color:var(--ink-faint)">(정중형)</span> ↔ 学生だ <span style="color:var(--ink-faint)">(보통형)</span></div>
+            <div class="cko">지금은 정중형 <b class="jp">です</b> 계열 네 가지를 먼저 확실히 익힙니다. <b class="jp">だ</b>는 보통형을 본격적으로 배울 때 다시 등장합니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 13 · 문장 해부 ============ -->
+        <section id="anatomy" class="section">
+          <h2><span class="sec-no">13</span> 문장 하나 완전히 분석하기</h2>
+          <p>아래 문장의 각 조각을 <b>탭</b>하면 그 역할이 강조됩니다. Lesson 1의
+            <b>TOPIC + INFORMATION</b>에서 <b>+ STATUS(시제·긍정/부정)</b>로 한 단계 발전했습니다.</p>
+
+          <!-- 핵심 시각화 · Sentence Anatomy -->
+          <div class="figure" data-anatomy>
+            <div class="figure__title">핵심 시각화 · Sentence Anatomy</div>
+            <div class="anatomy">
+              <div class="anatomy__sentence jp" style="font-size:clamp(20px,5.5vw,32px)">
+                <span class="anatomy__piece role-topic" data-role="topic"><span class="furi" data-yomi="きのう">昨日</span>は</span>
+                <span class="anatomy__piece role-info" data-role="info"><span class="furi" data-yomi="やすみ">休み</span></span>
+                <span class="anatomy__piece role-status" data-role="status">ではありませんでした</span>
+              </div>
+              <div class="anatomy__roles">
+                <div class="arole role-topic" data-role="topic">
+                  <div class="arole__en">TOPIC</div>
+                  <div class="arole__ko">화제</div>
+                  <div class="arole__jp jp">昨日は · 어제에 대해서</div>
+                </div>
+                <div class="arole role-info" data-role="info">
+                  <div class="arole__en">INFORMATION</div>
+                  <div class="arole__ko">정보</div>
+                  <div class="arole__jp jp">休み · 휴일</div>
+                </div>
+                <div class="arole role-status" data-role="status">
+                  <div class="arole__en">STATUS</div>
+                  <div class="arole__ko">부정 + 과거</div>
+                  <div class="arole__jp jp">ではありませんでした</div>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap"><span class="jp">[昨日 は] [休み] [ではありませんでした]</span> = [화제] [정보] [과거+부정]</div>
+          </div>
+        </section>
+
+        <!-- ============ 14 · 문법 성장 ============ -->
+        <section id="growth" class="section">
+          <h2><span class="sec-no">14</span> 문장이 성장하는 모습</h2>
+          <p>새 문법을 배울수록 기존 문장을 버리는 것이 아니라 <b>확장</b>합니다.</p>
+
+          <!-- 시각화 · Grammar Growth (Priority 5) -->
+          <div class="figure">
+            <div class="figure__title">시각화 10 · Grammar Growth</div>
+            <div class="growth">
+              <div class="growth__item"><span class="growth__badge">Lesson 1</span><span class="growth__jp jp">私は学生です。</span></div>
+              <div class="growth__arrow">↓ 부정 추가</div>
+              <div class="growth__item is-new"><span class="growth__badge">Lesson 2</span><span class="growth__jp jp">私は学生<span class="chg chg--neg">ではありません</span>。</span></div>
+              <div class="growth__arrow">↓ 과거 추가</div>
+              <div class="growth__item is-new"><span class="growth__badge">Lesson 2</span><span class="growth__jp jp">私は学生<span class="chg">でした</span>。</span></div>
+              <div class="growth__arrow">↓ 「도」 추가</div>
+              <div class="growth__item is-new"><span class="growth__badge">Lesson 2</span><span class="growth__jp jp">田中さん<span style="color:var(--info)">も</span>学生<span class="chg">でした</span>。</span></div>
+            </div>
+            <div class="growth__note">새 문법을 배울수록 기존 문장을 버리지 않고 확장합니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 15 · Check Quiz ============ -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">15</span> Check Quiz</h2>
+          <p>총 8문제. 앞 4문제는 형태 확인, 뒤 4문제는 문장 구조 이해를 확인합니다. 선택하면 정답/오답을 표시하고, 정답 확인 후 해설을 볼 수 있습니다.</p>
+
+          <div class="quiz">
+            <!-- Q1 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q1</span> “저는 선생님이 아닙니다.” 가장 알맞은 문장은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">私は先生です。</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">私は先生でした。</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">私は先生ではありません。</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">私は先生ありません。</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">私は先生ではありません。</span></div>
+                <div class="exp"><span class="jp">명사 + ではありません</span>은 “~이 아닙니다.”라는 현재 부정 표현입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q2</span> 빈칸에 알맞은 것은? (어제는 휴일이었습니다.)</div>
+              <div class="qstem jp">昨日は休み<span class="blank">（　）</span>。</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">です</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">でした</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">ではありません</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">ですか</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">でした</span></div>
+                <div class="exp"><span class="jp">休みです</span>(휴일입니다) → <span class="jp">休みでした</span>(휴일이었습니다). 「です → でした」로 과거가 됩니다.</div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q3</span> “어제는 휴일이 아니었습니다.” 가장 알맞은 문장은?</div>
+              <ul class="mcq" data-answer="4">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">昨日は休みです。</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">昨日は休みではありません。</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">昨日は休みでした。</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">昨日は休みではありませんでした。</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ④ <span class="jp">昨日は休みではありませんでした。</span></div>
+                <div class="exp">현재 부정 <span class="jp">休みではありません</span> → 과거 부정 <span class="jp">休みではありませんでした</span>입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q4</span> <span class="jp">私も学生です。</span> 가장 자연스러운 뜻은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span>저는 학생이 아닙니다.</li>
+                <li data-opt="2"><span class="opt">②</span>저만 학생입니다.</li>
+                <li data-opt="3"><span class="opt">③</span>저도 학생입니다.</li>
+                <li data-opt="4"><span class="opt">④</span>저는 학생이었습니다.</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ 저도 학생입니다.</div>
+                <div class="exp"><span class="jp">も</span>는 “~도”라는 의미입니다. <span class="jp">私も</span> → 저도.</div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q5</span> 빈칸에 알맞은 것은? (다나카 씨는 선생님이 아니었습니다.)</div>
+              <div class="qstem jp">田中さんは先生<span class="blank">（　）</span>。</div>
+              <ul class="mcq" data-answer="1">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">ではありませんでした</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">でしたありません</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">じゃでした</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">ありませんです</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ① <span class="jp">ではありませんでした</span></div>
+                <div class="exp">명사문의 과거 부정은 <span class="jp">명사 + ではありませんでした</span> 형태입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q6</span> <span class="jp">「昨日は休みでした。」</span>에서 과거임을 나타내는 부분은?</div>
+              <ul class="mcq" data-answer="4">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">昨日</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">は</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">休み</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">でした</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ④ <span class="jp">でした</span></div>
+                <div class="exp"><span class="jp">でした</span>는 <span class="jp">です</span>의 과거 형태입니다. <span class="jp">昨日</span>도 과거를 암시하지만, 문법적으로 문장을 과거형으로 만드는 부분은 <span class="jp">でした</span>입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q7</span> A: <span class="jp">私は学生です。</span> B도 학생이라고 말하고 싶습니다. 가장 알맞은 표현은?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">Bさんは学生ですか。</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">Bさんも学生です。</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">Bさんを学生です。</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">Bさんか学生です。</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">Bさんも学生です。</span></div>
+                <div class="exp">앞에서 “나도 학생”이라는 정보가 있고, B 역시 학생이라는 같은 정보를 추가하므로 <span class="jp">も</span>를 사용합니다.</div>
+              </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q8</span> <span class="jp">「田中さんも学生ではありませんでした。」</span> 가장 올바른 분석은?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">田中さん / も学生 / では / ありませんでした</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">田中さんも / 学生 / ではありませんでした</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">田中さんも学生 / ではありません / でした</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">田中 / さんも学生では / ありませんでした</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">田中さんも / 学生 / ではありませんでした</span></div>
+                <div class="exp"><span class="jp">田中さんも</span>(다나카 씨도) / <span class="jp">学生</span>(학생) / <span class="jp">ではありませんでした</span>(아니었습니다). “다나카 씨도 학생이 아니었습니다.”</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 16 · 오늘의 핵심 + 10초 복습 ============ -->
+        <section id="summary" class="section">
+          <h2><span class="sec-no">16</span> 오늘의 핵심</h2>
+          <div class="keygrid">
+            <div class="keycard">
+              <div class="k-jp jp">～です</div>
+              <div class="k-ko">~입니다.</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">～ではありません</div>
+              <div class="k-ko">~이 아닙니다.</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">～でした</div>
+              <div class="k-ko">~이었습니다.</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">～ではありませんでした</div>
+              <div class="k-ko">~이 아니었습니다.</div>
+            </div>
+            <div class="keycard full">
+              <div class="k-jp jp" style="color:var(--info)">も</div>
+              <div class="k-ko">~도 · 명사는 그대로 두고 <b>뒤의 끝맺음을 바꿔</b> 긍정·부정·과거를 표현합니다.</div>
+            </div>
+          </div>
+
+          <h3>10초 복습</h3>
+          <p>뜻만 보고 일본어를 떠올려본 뒤, 카드를 <b>탭</b>해 확인하세요.</p>
+          <div class="recall">
+            <button class="recall__card" type="button">
+              <span class="recall__ko">~입니다.</span>
+              <span class="recall__jp jp">です</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko">~이 아닙니다.</span>
+              <span class="recall__jp jp">ではありません</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko">~이었습니다.</span>
+              <span class="recall__jp jp">でした</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko">~이 아니었습니다.</span>
+              <span class="recall__jp jp">ではありませんでした</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ============ 17 · 다음 Lesson ============ -->
+        <section id="next" class="section">
+          <h2><span class="sec-no">17</span> 다음 Lesson과 연결</h2>
+          <div class="closing">
+            <h3>지금까지는 명사 하나로 문장을 만들었습니다</h3>
+            <div class="big">私は学生でした。 / 田中さんも学生です。</div>
+            <p>다음에는 명사끼리 연결하고, “이것 / 그것 / 저것”을 배웁니다.</p>
+            <div class="nextlist">
+              <div class="ni"><span class="jp">の</span><span class="d">명사와 명사를 연결 (私の本 · 내 책)</span></div>
+              <div class="ni"><span class="jp">これ / それ / あれ</span><span class="d">이것 / 그것 / 저것</span></div>
+              <div class="ni"><span class="jp">この / その / あの ＋ 명사</span><span class="d">이 ~ / 그 ~ / 저 ~</span></div>
+            </div>
+            <a class="closing__back" href="../../index.html">← 강의 목록으로 돌아가기</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 하단 모바일 내비 -->
+  <nav class="bottomnav" aria-label="이동">
+    <a href="../../index.html"><span class="bn-ico">☰</span>강의목록</a>
+    <button type="button" data-open-toc><span class="bn-ico">📑</span>목차</button>
+    <a href="#intro"><span class="bn-ico">↑</span>맨 위로</a>
+  </nav>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
