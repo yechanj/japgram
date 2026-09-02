@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JLPT N5 문법 — 조각으로 배우는 일본어</title>
+  <meta name="description" content="JLPT N5 일본어 기초 문법을 문장의 조각(화제·정보·질문)으로 이해하는 모바일 우선 웹 교재" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="hub">
+    <header class="hub__hero">
+      <span class="badge">JLPT N5 · Grammar Course</span>
+      <h1>조각으로 배우는 <span class="jp">日本語</span> 문법</h1>
+      <p>
+        문장을 통째로 외우지 않습니다. <b>화제(は) → 정보(です) → 질문(か)</b>처럼
+        일본어 문장이 <b>조각으로 보이기 시작하는 것</b>을 목표로, 출퇴근 중에도 편하게 읽는 교재입니다.
+      </p>
+    </header>
+
+    <section id="lessonGrid" aria-label="강의 목록"></section>
+  </main>
+
+  <script src="assets/data/lessons.js"></script>
+  <script>
+    window.N5_renderHub("#lessonGrid");
+  </script>
+</body>
+</html>

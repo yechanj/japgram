@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 1 · 일본어 문장의 첫 번째 뼈대 「AはBです」 — JLPT N5 문법</title>
+  <meta name="description" content="일본어 문장의 기본 구조 AはBです. 화제 조사 は, です, ～ですか, は→わ 읽기, 문맥상 생략을 조각으로 이해하는 N5 문법 강의" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <!-- 모바일 상단바 -->
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">Lesson 1 · AはBです</div>
+    <span class="topbar__prog" data-prog-txt>1 / 14</span>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo jp">あ</div>
+        <div class="sidebar__title">JLPT N5 문법
+          <small>Lesson 1 · AはBです</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#goal"><span class="num">0</span> 학습 목표</a></li>
+          <li><a href="#pieces"><span class="num">1</span> 문장을 조각으로</a></li>
+          <li><a href="#wa"><span class="num">2</span> 「は」는 무엇일까</a></li>
+          <li><a href="#reading"><span class="num">3</span> 「は」의 발음</a></li>
+          <li><a href="#desu"><span class="num">4</span> 「です」</a></li>
+          <li><a href="#builder"><span class="num">5</span> 문장 Builder</a></li>
+          <li><a href="#examples"><span class="num">6</span> 대표 예문</a></li>
+          <li><a href="#question"><span class="num">7</span> 질문 「か」</a></li>
+          <li><a href="#ellipsis"><span class="num">8</span> 문맥상 생략</a></li>
+          <li><a href="#compare"><span class="num">9</span> 한·일 구조 비교</a></li>
+          <li><a href="#anatomy"><span class="num">10</span> 문장 해부</a></li>
+          <li><a href="#mistakes"><span class="num">11</span> 헷갈리는 부분</a></li>
+          <li><a href="#quiz"><span class="num">12</span> Check Quiz</a></li>
+          <li><a href="#summary"><span class="num">13</span> 오늘의 핵심</a></li>
+          <li><a href="#next"><span class="num">14</span> 다음 Lesson</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <!-- 본문 -->
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">JLPT N5 Grammar · Lesson 1</div>
+          <h1>일본어 문장의 첫 번째 뼈대</h1>
+          <div class="lesson-hero__pattern jp">A　<span class="pt">は</span>　B　です</div>
+          <div class="progress">
+            <div class="progress__bar"><div class="progress__fill"></div></div>
+            <span class="progress__txt" data-prog-txt>1 / 14</span>
+          </div>
+        </header>
+
+        <!-- ============ 0 · 학습 목표 ============ -->
+        <section id="goal" class="section">
+          <h2><span class="sec-no">00</span> 학습 목표</h2>
+          <p class="lead">이번 강에서는 일본어 문장을 만드는 가장 기본 구조
+            <b class="jp">「A<span class="pt">は</span>Bです」</b>를 배웁니다.</p>
+          <p>이 구조를 이해하면 아래 같은 가장 기본적인 문장을 직접 만들 수 있습니다.</p>
+          <ul class="goals">
+            <li><span class="jp">私は学生です。</span> — 저는 학생입니다.</li>
+            <li><span class="jp">私は韓国人です。</span> — 저는 한국인입니다.</li>
+            <li><span class="jp">田中さんは先生です。</span> — 다나카 씨는 선생님입니다.</li>
+            <li><span class="jp">ゆきさんは大学生ですか。</span> — 유키 씨는 대학생입니까?</li>
+          </ul>
+          <div class="oneline">또한 일본어에서 매우 중요한 조사 <b class="jp pt">は</b>가 어떤 역할을 하는지 처음으로 이해합니다.</div>
+        </section>
+
+        <!-- ============ 1 · 문장을 조각으로 ============ -->
+        <section id="pieces" class="section">
+          <h2><span class="sec-no">01</span> 일본어 문장을 조각으로 보자</h2>
+          <p>일본어 문장을 처음부터 통째로 외우지 않습니다. 문장을
+            <b>두 개의 정보 + 문장을 마무리하는 표현</b>으로 나눠봅니다.</p>
+
+          <!-- Grammar Pattern Card (Priority 1) -->
+          <div class="gpat" data-gpat>
+            <div class="gpat__label">Grammar Pattern</div>
+            <div class="gpat__row">
+              <span class="gpat__tok" data-exp="<b>A</b> — 이야기의 대상. 화제가 될 명사가 들어갑니다.">A</span>
+              <span class="gpat__tok is-pt" data-exp="<b>は</b> — 화제 표시 조사. ‘지금부터 A에 대해 말할게요’라는 신호입니다. (읽을 때는 <b>わ</b>)">は</span>
+              <span class="gpat__tok" data-exp="<b>B</b> — A에 대해 전달할 정보(명사)가 들어갑니다.">B</span>
+              <span class="gpat__tok" data-exp="<b>です</b> — 명사문을 정중하게 끝맺습니다. ‘~입니다’.">です</span>
+            </div>
+            <div class="gpat__mean">A는 B입니다.</div>
+            <div class="gpat__hint">각 조각을 탭하면 설명이 나옵니다 · <b class="jp">は</b>만 강조색을 씁니다</div>
+            <div class="gpat__pop"></div>
+          </div>
+
+          <p>예를 들어 <b class="jp">私は学生です。</b>를 조각으로 나누면:</p>
+
+          <!-- 시각화 1 · 기본 문장 조립 -->
+          <div class="figure">
+            <div class="figure__title">시각화 1 · 기본 문장 조립</div>
+            <div class="chunks">
+              <div class="chunk">
+                <div class="chunk__box jp"><span class="furi" data-yomi="わたし">私</span></div>
+                <div class="chunk__cap"><b>私</b>이야기의 대상</div>
+              </div>
+              <div class="chunk">
+                <div class="chunk__box is-pt jp">は</div>
+                <div class="chunk__cap"><b>は</b>~에 대해서는</div>
+              </div>
+              <div class="chunk">
+                <div class="chunk__box jp"><span class="furi" data-yomi="がくせい">学生</span>です</div>
+                <div class="chunk__cap"><b>学生です</b>학생입니다</div>
+              </div>
+            </div>
+            <div class="chunk-flow">화제 제시 <span class="jp">私は</span> → 화제에 대한 정보 <span class="jp">学生です</span></div>
+            <div class="figure__cap">“저에 대해서 말하면 → 학생입니다.” 라는 구조입니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 2 · は는 무엇일까 ============ -->
+        <section id="wa" class="section">
+          <h2><span class="sec-no">02</span> 「は」는 무엇일까?</h2>
+          <p><b class="jp pt">は</b>는 일본어에서 매우 중요한 <b>조사</b>입니다. 조사는 명사 뒤에 붙어서
+            그 명사가 문장에서 어떤 역할을 하는지 알려줍니다. 그중 가장 먼저 배우는 것이 <b class="jp pt">は</b>입니다.</p>
+          <p>「は」는 대략 <b>“~은 / ~는”</b>이라고 생각하면 이해하기 쉽습니다.</p>
+          <ul class="clean">
+            <li><span class="jp">私<span class="pt pt--pill">は</span>学生です。</span> — 저<b>는</b> 학생입니다.</li>
+            <li><span class="jp">田中さん<span class="pt pt--pill">は</span>先生です。</span> — 다나카 씨<b>는</b> 선생님입니다.</li>
+          </ul>
+
+          <div class="card card--point">
+            <div class="card__label"><span class="dot"></span>하지만 「は = 은/는」만 외우지는 마세요</div>
+            <p>조금 더 정확히 이해하면, <b>「は」는 지금부터 무엇에 대해 이야기할지를 알려주는 표시</b>입니다.
+              <b class="jp">田中さんは</b>를 보는 순간 “아, 지금부터 다나카 씨에 대한 이야기를 하는구나.”라고 생각하면 됩니다.
+              그 다음 <b class="jp">先生です</b>라는 정보가 나옵니다.</p>
+          </div>
+
+          <!-- 시각화 2 · Topic → Information (Priority 2) -->
+          <div class="figure">
+            <div class="figure__title">시각화 2 · Topic → Information</div>
+            <div class="topicflow">
+              <div class="tinfo is-topic">
+                <div class="tinfo__tag">TOPIC · 이야기의 대상</div>
+                <div class="tinfo__jp jp">田中さんは</div>
+                <div class="tinfo__desc">지금부터 다나카 씨에 대해 말합니다.</div>
+                <div class="tinfo__sub">문법에서는 이를 ‘화제’라고 합니다.</div>
+              </div>
+              <div class="topicflow__arrow">→</div>
+              <div class="tinfo is-info">
+                <div class="tinfo__tag">INFORMATION · 정보</div>
+                <div class="tinfo__jp jp">先生です</div>
+                <div class="tinfo__desc">다나카 씨에 대한 정보</div>
+                <div class="tinfo__sub">선생님입니다</div>
+              </div>
+            </div>
+            <div class="figure__cap"><span class="jp">田中さんは ｜ 先生です。</span> — 다나카 씨에 대해서 말하면 ｜ 선생님입니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 3 · は 발음 ============ -->
+        <section id="reading" class="section">
+          <h2><span class="sec-no">03</span> 「は」는 어떻게 읽을까?</h2>
+          <p>여기에는 중요한 주의사항이 하나 있습니다. 글자는 <b class="jp">は</b>이지만,
+            <b>조사로 사용할 때는 <span class="jp pt">わ</span>라고 읽습니다.</b></p>
+
+          <div class="card card--warn">
+            <div class="card__label"><span class="dot"></span>Warning · は가 조사일 때는 「わ」로 읽는다</div>
+            <p style="text-align:center;margin:10px 0;">
+              <span class="reading-hl">は<span class="arrow">→</span>わ</span>
+            </p>
+            <p style="text-align:center;" class="jp" >
+              <span class="furi" data-yomi="わたし">私</span>は<span class="furi" data-yomi="がくせい">学生</span>です。
+            </p>
+            <p style="text-align:center;">읽기: 私【わたし】 <b class="jp">は → わ</b> 学生【がくせい】 です</p>
+            <p>따라서 <b class="jp">私は</b>는 <b class="jp">わたしは</b>라고 쓰지만, 읽을 때는 <b class="jp">わたし わ</b>처럼 발음합니다.
+              초보자가 매우 자주 헷갈리는 부분이므로 꼭 기억하세요. (로마자는 사용하지 않습니다.)</p>
+          </div>
+        </section>
+
+        <!-- ============ 4 · です ============ -->
+        <section id="desu" class="section">
+          <h2><span class="sec-no">04</span> 「です」는 문장을 정중하게 끝낸다</h2>
+          <p>초보 단계에서는 우선 <b class="jp">です</b>를 <b>“~입니다”</b>라고 이해하면 충분합니다.</p>
+          <ul class="clean">
+            <li>학생입니다. → <span class="jp"><span class="furi" data-yomi="がくせい">学生</span>です。</span></li>
+            <li>선생님입니다. → <span class="jp"><span class="furi" data-yomi="せんせい">先生</span>です。</span></li>
+            <li>한국인입니다. → <span class="jp"><span class="furi" data-yomi="かんこくじん">韓国人</span>です。</span></li>
+          </ul>
+          <p>이제 두 부분을 합쳐봅니다.</p>
+          <div class="ex">
+            <div class="ex__jp jp"><span class="furi" data-yomi="わたし">私</span><span class="pt">は</span><span class="furi" data-yomi="かんこくじん">韓国人</span>です。</div>
+            <div class="ex__ko">저는 한국인입니다.</div>
+            <div class="ex__struct">
+              <div class="ex__row is-topic"><span class="k jp">私は</span><span class="v">저에 대해서 말하면</span></div>
+              <div class="ex__row is-info"><span class="k jp">韓国人です</span><span class="v">한국인입니다</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 5 · 문장 Builder ============ -->
+        <section id="builder" class="section">
+          <h2><span class="sec-no">05</span> 문장 Builder</h2>
+          <p>같은 뼈대 <b class="jp">A<span class="pt">は</span>Bです</b>에 단어만 바꿔 넣어봅니다.
+            아래 프리셋 버튼을 누르면 <b>A와 B만</b> 바뀝니다.</p>
+
+          <div class="figure" data-builder>
+            <div class="figure__title">시각화 3 · 같은 뼈대, 다른 단어</div>
+            <div class="builder__slots">
+              <div class="bslot bslot--a">
+                <div class="bslot__cap">A · 화제</div>
+                <div class="bslot__val jp" data-slot-a>私</div>
+              </div>
+              <span class="bslot__plus">＋</span>
+              <div class="bslot bslot--pt">
+                <div class="bslot__cap">조사</div>
+                <div class="bslot__val jp">は</div>
+              </div>
+              <span class="bslot__plus">＋</span>
+              <div class="bslot bslot--b">
+                <div class="bslot__cap">B · 정보</div>
+                <div class="bslot__val jp" data-slot-b>学生</div>
+              </div>
+              <span class="bslot__plus">＋</span>
+              <div class="bslot">
+                <div class="bslot__cap">끝맺음</div>
+                <div class="bslot__val jp">です</div>
+              </div>
+            </div>
+            <div class="builder__result">
+              <span class="r-jp jp" data-result-jp>私<span class="pt">は</span>学生です。</span>
+              <span class="r-ko" data-result-ko>저는 학생입니다.</span>
+            </div>
+            <div class="builder__presets">
+              <button class="preset-btn active" data-a="私" data-b="学生" data-ko="저는 학생입니다."><span class="jp">私 × 学生</span></button>
+              <button class="preset-btn" data-a="田中さん" data-b="先生" data-ko="다나카 씨는 선생님입니다."><span class="jp">田中さん × 先生</span></button>
+              <button class="preset-btn" data-a="山田さん" data-b="日本人" data-ko="야마다 씨는 일본인입니다."><span class="jp">山田さん × 日本人</span></button>
+            </div>
+            <div class="figure__cap">목표는 반복 훈련이 아니라, <b>같은 뼈대에 단어가 들어간다</b>는 사실을 눈으로 보는 것입니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 6 · 대표 예문 ============ -->
+        <section id="examples" class="section">
+          <h2><span class="sec-no">06</span> 대표 예문</h2>
+
+          <div class="ex">
+            <div class="ex__no">Example 1</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="わたし">私</span><span class="pt">は</span><span class="furi" data-yomi="がくせい">学生</span>です。</div>
+            <div class="ex__ko">저는 학생입니다.</div>
+            <div class="ex__reading">읽기 · <b>私</b>【わたし】 · <b>学生</b>【がくせい】</div>
+            <div class="ex__struct">
+              <div class="ex__row is-topic"><span class="k jp">私は</span><span class="v">화제: 나</span></div>
+              <div class="ex__row is-info"><span class="k jp">学生です</span><span class="v">나에 대한 정보: 학생입니다</span></div>
+            </div>
+          </div>
+
+          <div class="ex">
+            <div class="ex__no">Example 2</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="たなか">田中</span>さん<span class="pt">は</span><span class="furi" data-yomi="せんせい">先生</span>です。</div>
+            <div class="ex__ko">다나카 씨는 선생님입니다.</div>
+            <div class="ex__reading">읽기 · <b>田中</b>【たなか】 · <b>先生</b>【せんせい】</div>
+            <div class="ex__struct">
+              <div class="ex__row is-topic"><span class="k jp">田中さんは</span><span class="v">지금 이야기하는 사람</span></div>
+              <div class="ex__row is-info"><span class="k jp">先生です</span><span class="v">그 사람에 대한 정보</span></div>
+            </div>
+          </div>
+
+          <div class="ex">
+            <div class="ex__no">Example 3</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="やまだ">山田</span>さん<span class="pt">は</span><span class="furi" data-yomi="にほんじん">日本人</span>です。</div>
+            <div class="ex__ko">야마다 씨는 일본인입니다.</div>
+            <div class="ex__reading">읽기 · <b>山田</b>【やまだ】 · <b>日本人</b>【にほんじん】</div>
+            <div class="ex__struct">
+              <div class="ex__row is-topic"><span class="k jp">山田さんは</span><span class="v">화제</span></div>
+              <div class="ex__row is-info"><span class="k jp">日本人です</span><span class="v">정보</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 7 · 질문 か ============ -->
+        <section id="question" class="section">
+          <h2><span class="sec-no">07</span> 질문은 「か」를 붙인다</h2>
+          <p>지금까지는 모두 설명하는 문장이었습니다. 이 문장을 질문으로 만들고 싶다면 아주 간단합니다.
+            문장 마지막에 <b class="jp pt">か</b>를 붙입니다.</p>
+
+          <div class="gpat" style="padding:22px 20px;">
+            <div class="gpat__row" style="font-size:0;">
+              <span class="jp" style="font-size:clamp(20px,5vw,26px);font-weight:700;">A　<span class="pt">は</span>　B　です。</span>
+            </div>
+            <div class="transform__arrow" style="margin:6px 0;">↓</div>
+            <div class="gpat__row" style="font-size:0;">
+              <span class="jp" style="font-size:clamp(20px,5vw,26px);font-weight:700;">A　<span class="pt">は</span>　B　です<span style="color:var(--ques);background:var(--ques-soft);border-radius:6px;padding:0 6px;">か</span>。</span>
+            </div>
+          </div>
+
+          <!-- 시각화 5 · 평서문 → 질문 (Priority 3) -->
+          <div class="figure" data-transform>
+            <div class="figure__title">시각화 4 · 평서문 → 질문</div>
+            <div class="transform">
+              <div class="transform__jp jp">田中さんは先生です。
+                <span class="ko">다나카 씨는 선생님입니다.</span>
+              </div>
+              <div class="transform__arrow">↓</div>
+              <button class="ellipsis__ctrl" data-transform-btn>문장 끝에 <b class="jp">＋か</b> 붙이기</button>
+              <div class="transform__arrow">↓</div>
+              <div class="transform__jp jp" data-transform-result style="visibility:hidden;">田中さんは先生です<span class="add">か</span>。
+                <span class="ko">다나카 씨는 선생님입니까?</span>
+              </div>
+            </div>
+            <div class="figure__cap"><span class="jp">田中さん は ｜ 先生 です ｜ か</span> = 화제 ｜ 정보 ｜ 질문.
+              「か」 블록만 강조하여 <b>질문 기능이 문장 끝에 추가됐다</b>는 느낌을 줍니다.</div>
+          </div>
+
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>물음표는 꼭 필요하지 않다</div>
+            <p>문장 끝의 <b class="jp">か</b>가 이미 질문임을 보여주므로 <b class="jp">田中さんは先生ですか。</b>처럼
+              마침표 「。」를 쓰는 표현도 자연스럽습니다. 일상 메시지에서는 <b class="jp">先生ですか？</b>처럼 물음표도 많이 씁니다.
+              이 교재에서는 기본적으로 교재 표기 방식에 맞춰 <b class="jp">～ですか。</b> 형태를 사용합니다.</p>
+          </div>
+        </section>
+
+        <!-- ============ 8 · 문맥상 생략 ============ -->
+        <section id="ellipsis" class="section">
+          <h2><span class="sec-no">08</span> 이미 아는 정보는 자주 생략된다</h2>
+          <p>일본어의 매우 중요한 특징입니다. 누군가 나에게 <b class="jp">学生ですか。</b>(학생입니까?)라고 묻습니다.
+            완전한 형태를 생각하면 <b class="jp">あなたは学生ですか。</b>라고 만들 수 있지만, 상대방에 대해 이야기하고 있다는 것이
+            이미 분명하기 때문에 <b class="jp">あなたは</b>를 굳이 말하지 않는 경우가 많습니다.</p>
+
+          <!-- 시각화 6 · 생략되는 정보 (Priority 4) -->
+          <div class="figure" data-ellipsis>
+            <div class="figure__title">시각화 5 · 생략되는 정보</div>
+            <div class="ellipsis">
+              <div class="ellipsis__stage jp"><span data-ellipsis-word>あなたは</span>学生ですか。</div>
+              <div class="ellipsis__ko">당신은 학생입니까?</div>
+              <button class="ellipsis__ctrl" data-ellipsis-word-btn>생략해보기 →</button>
+            </div>
+            <div class="figure__cap"><b>문맥에서 분명한 정보</b>는 일본어에서 자주 생략됩니다. — “주어를 생략한다”가 아니라,
+              <b>문맥상 이미 알고 있는 부분을 자주 생략한다</b>가 더 정확합니다.</div>
+          </div>
+
+          <div class="ex">
+            <div class="ex__struct">
+              <div class="ex__row"><span class="k jp">질문</span><span class="v"><b class="jp">学生ですか。</b> — 학생입니까?</span></div>
+              <div class="ex__row"><span class="k jp">대답</span><span class="v"><b class="jp">はい、学生です。</b> — 네, 학생입니다.</span></div>
+            </div>
+          </div>
+          <p>여기에서도 <b class="jp">私は</b>를 다시 말하지 않았습니다. 누구에 대한 이야기인지 이미 알고 있기 때문입니다.</p>
+
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>「あなた」를 계속 쓰지 않아도 된다</div>
+            <p>한국어의 “당신은”을 옮길 때 <b class="jp">あなたは</b>를 떠올리기 쉽습니다. 문법적으로 틀린 것은 아니지만,
+              상대가 분명하면 이름·주어 자체를 생략하는 경우가 많습니다.
+              “학생이에요?”라고 물을 때 <span class="jp"><span class="wrongmark">△ あなたは学生ですか。</span></span>보다
+              상황에 따라 <span class="jp"><span class="okmark">○ 学生ですか。</span></span>가 더 자연스러울 수 있습니다.
+              이번 단계에서는 <b>모든 ‘너/당신’을 あなた로 번역할 필요는 없다</b> 정도만 기억하면 됩니다.</p>
+          </div>
+        </section>
+
+        <!-- ============ 9 · 한·일 구조 비교 ============ -->
+        <section id="compare" class="section">
+          <h2><span class="sec-no">09</span> 한국어와 비교해보기</h2>
+          <p>한국어와 일본어는 어순이 꽤 비슷합니다. 그래서 한국인에게 일본어 문장 구조 자체는 영어보다 상대적으로 익숙합니다.</p>
+
+          <div class="figure">
+            <div class="figure__title">시각화 6 · 한·일 구조 대응</div>
+            <div class="compare">
+              <div class="compare__col">
+                <h5>한국어</h5>
+                <div class="cstack">
+                  <div class="cstack__item">저</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item">는</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item">학생</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item">입니다</div>
+                </div>
+              </div>
+              <div class="compare__col is-jp">
+                <h5>日本語</h5>
+                <div class="cstack">
+                  <div class="cstack__item jp">私</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item jp pt">は</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item jp">学生</div>
+                  <div class="cstack__arrow">↓</div>
+                  <div class="cstack__item jp">です</div>
+                </div>
+              </div>
+              <div class="compare__note">구조가 상당히 비슷합니다 · 명사 + 조사 + 정보로 조각내는 습관을 들이면 좋습니다.</div>
+            </div>
+            <div class="figure__cap">단, <b class="jp">は</b>는 항상 기계적으로 한국어 「은/는」과 1:1 대응하는 것은 아니며, 앞으로 더 자세히 배웁니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 10 · 화제와 주어 + 문장 해부 ============ -->
+        <section id="anatomy" class="section">
+          <h2><span class="sec-no">10</span> 화제와 주어는 완전히 같지 않다</h2>
+          <p>흔히 <b>は = 주격 조사</b>라고 생각하기 쉽지만, 정확하게는 다릅니다.
+            <b>は는 지금 이야기할 화제를 보여주는 조사</b>입니다. 지금은 둘을 비교해 암기하지 않습니다. 단지:</p>
+          <div class="oneline"><b class="jp">は</b> = 앞으로 무엇에 대해 말할 것인지 보여준다.</div>
+
+          <div class="coming">
+            <div class="tag">COMING SOON · Lesson 5에서 다시 만납니다</div>
+            <div class="cjp jp"><span class="furi" data-yomi="ねこ">猫</span><span class="pt" style="color:var(--info)">が</span>います。</div>
+            <div class="cko">고양이가 있습니다. — 그때 <b class="jp">は와 が</b>는 무엇이 다른가를 문장 속에서 제대로 비교합니다.
+              이번 강에서는 억지로 は/が 차이를 외우지 않습니다.</div>
+          </div>
+
+          <h3>문장 하나를 완전히 분석해보기</h3>
+          <p>아래 문장의 각 조각을 <b>탭</b>하면 그 역할이 강조됩니다.</p>
+
+          <!-- 핵심 시각화 · Sentence Anatomy -->
+          <div class="figure" data-anatomy>
+            <div class="figure__title">핵심 시각화 · Sentence Anatomy</div>
+            <div class="anatomy">
+              <div class="anatomy__sentence jp">
+                <span class="anatomy__piece role-topic" data-role="topic"><span class="furi" data-yomi="わたし">私</span>は</span>
+                <span class="anatomy__piece role-info" data-role="info"><span class="furi" data-yomi="がくせい">学生</span>です</span>
+                <span class="anatomy__piece role-ques" data-role="ques">か</span>
+              </div>
+              <div class="anatomy__roles">
+                <div class="arole role-topic" data-role="topic">
+                  <div class="arole__en">TOPIC</div>
+                  <div class="arole__ko">화제</div>
+                  <div class="arole__jp jp">私は</div>
+                </div>
+                <div class="arole role-info" data-role="info">
+                  <div class="arole__en">INFORMATION</div>
+                  <div class="arole__ko">정보</div>
+                  <div class="arole__jp jp">学生です</div>
+                </div>
+                <div class="arole role-ques" data-role="ques">
+                  <div class="arole__en">QUESTION</div>
+                  <div class="arole__ko">질문</div>
+                  <div class="arole__jp jp">か</div>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap"><span class="jp">[私 は] [学生 です] [か]</span> = [화제] [정보] [질문]</div>
+          </div>
+        </section>
+
+        <!-- ============ 11 · 헷갈리는 부분 ============ -->
+        <section id="mistakes" class="section">
+          <h2><span class="sec-no">11</span> 헷갈리는 부분</h2>
+          <div class="mistakes">
+            <div class="mistake">
+              <h5><span class="n">①</span> は는 「하」라고 읽지 않는다</h5>
+              <p>조사 <b class="jp">は</b> — 표기는 <b class="jp">は</b>, 발음은 <b class="jp pt">わ</b>.</p>
+              <p class="jp"><span class="furi" data-yomi="わたし">私</span>は学生です → わたし <b class="pt">わ</b> がくせいです</p>
+              <p>로마자는 실제 화면에 표시하지 않습니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">②</span> 「です」를 모든 ‘이다’에 기계적으로 붙이지 않는다</h5>
+              <p>지금은 명사문에서 <b class="jp">学生 + です</b>, <b class="jp">先生 + です</b>처럼 쓴다고 배우면 충분합니다.</p>
+              <p>동사 뒤에는 <span class="wrongmark jp">× 食べますです</span>처럼 붙이지 않습니다. 동사문은 Lesson 6부터 별도로 배웁니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">③</span> 모든 문장에 私は를 넣을 필요가 없다</h5>
+              <p>문맥이 분명하면 <span class="jp">私は学生です。</span> → <span class="jp okmark">学生です。</span>처럼 생략할 수 있습니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 12 · Check Quiz ============ -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">12</span> Check Quiz</h2>
+          <p>총 7문제. 선택지를 고르면 정답/오답을 표시하고, <b>정답 확인 후 해설</b>을 펼쳐볼 수 있습니다.</p>
+
+          <div class="quiz">
+            <!-- Q1 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q1</span> 빈칸에 알맞은 것을 고르세요.</div>
+              <div class="qstem jp">私は学生<span class="blank">（　）</span>。</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">は</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">です</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">か</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">を</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">です</span></div>
+                <div class="exp"><span class="jp">私は学生です。</span> — 「学生」은 명사이므로 「です」를 붙이면 “학생입니다.”라는 정중한 문장이 됩니다.</div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q2</span> 빈칸에 알맞은 조사를 고르세요.</div>
+              <div class="qstem jp">私<span class="blank">（　）</span>韓国人です。</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">を</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">に</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">は</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">で</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">は</span></div>
+                <div class="exp"><span class="jp">私は韓国人です。</span> — 「私」가 지금 이야기하는 화제이므로 「は」를 사용합니다.</div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q3</span> “다나카 씨는 선생님입니까?”에 가장 알맞은 문장은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">田中さんは先生です。</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">田中さんか先生です。</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">田中さんは先生ですか。</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">田中さんはか先生です。</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">田中さんは先生ですか。</span></div>
+                <div class="exp">평서문 <span class="jp">田中さんは先生です。</span> 뒤에 <span class="jp">か</span>를 붙이면 질문이 됩니다.</div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q4</span> <span class="jp">「私は学生です。」</span>에서 <span class="jp">「私は」</span>의 역할로 가장 적절한 것은?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span>행동의 장소를 나타낸다.</li>
+                <li data-opt="2"><span class="opt">②</span>지금부터 무엇에 대해 이야기할지 보여준다.</li>
+                <li data-opt="3"><span class="opt">③</span>질문임을 나타낸다.</li>
+                <li data-opt="4"><span class="opt">④</span>과거임을 나타낸다.</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ②</div>
+                <div class="exp"><span class="jp">「は」</span>는 화제를 나타냅니다. <span class="jp">私は</span>를 보면 “지금부터 私에 대한 이야기를 하는구나.”라고 이해하면 됩니다.</div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q5</span> 다음 문장에서 조사 <span class="jp">「は」</span>는 어떻게 읽을까요?</div>
+              <div class="qstem jp">私は日本人です。</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">は</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">わ</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">ば</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">ぱ</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">わ</span></div>
+                <div class="exp"><span class="jp">「は」</span>라는 글자는 원래 は라고 읽지만, 조사로 사용할 때는 <span class="jp">わ</span>라고 읽습니다.</div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q6</span> 상대방과 이야기하는 상황에서 “학생입니까?”라고 묻고 싶습니다. 가장 자연스러운 표현은?</div>
+              <ul class="mcq" data-answer="1">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">学生ですか。</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">学生かです。</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">は学生ですか。</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">学生はか。</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ① <span class="jp">学生ですか。</span></div>
+                <div class="exp">상대에 대해 이야기하고 있다는 것이 이미 분명하면 <span class="jp">「あなたは」</span>를 생략할 수 있습니다. 따라서 <span class="jp">学生ですか。</span>만으로 자연스럽게 질문할 수 있습니다.</div>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q7</span> 다음 문장을 구조적으로 가장 잘 나눈 것은?</div>
+              <div class="qstem jp">山田さんは先生ですか。</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">山田さん / は先生 / ですか</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">山田さんは / 先生です / か</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">山田さんは先生 / ですか</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">山田 / さんは先生ですか</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">山田さんは / 先生です / か</span></div>
+                <div class="exp"><span class="jp">山田さんは</span>(화제) / <span class="jp">先生です</span>(정보) / <span class="jp">か</span>(질문) 의 구조입니다.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 13 · 오늘의 핵심 ============ -->
+        <section id="summary" class="section">
+          <h2><span class="sec-no">13</span> 오늘의 핵심</h2>
+          <div class="keygrid">
+            <div class="keycard">
+              <div class="k-jp jp">A<span class="pt">は</span>Bです</div>
+              <div class="k-ko">A는 B입니다.</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp"><span class="pt">は</span></div>
+              <div class="k-ko">지금 이야기하는 화제를 표시 (읽을 때 わ)</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">です</div>
+              <div class="k-ko">명사문을 정중하게 끝맺음</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">～です<span class="pt">か</span></div>
+              <div class="k-ko">~입니까? (문장 끝에 か를 붙이면 질문)</div>
+            </div>
+            <div class="keycard full">
+              <div class="k-jp jp"><span class="pt">は</span> → わ</div>
+              <div class="k-ko">は는 조사일 때 「わ」라고 읽는다 · 문맥에서 분명한 정보는 자주 생략한다.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 14 · 다음 Lesson ============ -->
+        <section id="next" class="section">
+          <h2><span class="sec-no">14</span> 다음 Lesson과 연결</h2>
+          <div class="closing">
+            <h3>지금은 이렇게 말할 수 있습니다</h3>
+            <div class="big">私は学生です。</div>
+            <p>하지만 아직 “저는 학생이 아닙니다.”, “어제는 휴일이었습니다.” 같은 문장은 만들 수 없습니다.
+              다음 Lesson에서는 같은 문장을 바꿔봅니다.</p>
+            <div class="nextlist">
+              <div class="ni"><span class="jp">です</span><span class="d">입니다</span></div>
+              <div class="ni"><span class="jp">ではありません</span><span class="d">아닙니다</span></div>
+              <div class="ni"><span class="jp">でした</span><span class="d">이었습니다</span></div>
+              <div class="ni"><span class="jp">ではありませんでした</span><span class="d">아니었습니다</span></div>
+              <div class="ni"><span class="jp">私も学生です</span><span class="d">의 「も」도 함께 배웁니다</span></div>
+            </div>
+            <a class="closing__back" href="../../index.html">← 강의 목록으로 돌아가기</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 하단 모바일 내비 -->
+  <nav class="bottomnav" aria-label="이동">
+    <a href="../../index.html"><span class="bn-ico">☰</span>강의목록</a>
+    <button type="button" data-open-toc><span class="bn-ico">📑</span>목차</button>
+    <a href="#goal"><span class="bn-ico">↑</span>맨 위로</a>
+  </nav>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
