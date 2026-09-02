@@ -1133,3 +1133,122 @@ ul.clean li::before {
   .explain__arrow { transform: rotate(90deg); }
   .kosoado { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* =========================================================
+   =============  LESSON 4 전용 컴포넌트  ================
+   조사 を / に / へ / で
+   ========================================================= */
+
+/* Action Arrow (을/를 대상) */
+.actionarrow {
+  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+  margin: 6px 0;
+}
+.actionarrow__box {
+  font-family: var(--font-jp); font-size: clamp(18px, 4.6vw, 24px); font-weight: 700;
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px;
+}
+.actionarrow__mid { display: flex; flex-direction: column; align-items: center; }
+.actionarrow__p { font-family: var(--font-jp); font-size: 20px; font-weight: 700; color: var(--particle); }
+.actionarrow__line { color: var(--particle); font-size: 22px; line-height: 1; }
+
+/* 공간 장면 (Destination / Action Zone) */
+.scene {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 72px; flex-wrap: wrap;
+}
+.scene__ico { font-size: 32px; line-height: 1; }
+.scene__arrow { color: var(--brand); font-size: 24px; font-weight: 700; }
+.scene__label { font-size: 11px; color: var(--ink-faint); text-align: center; }
+.zone {
+  border: 2px dashed var(--brand); border-radius: 14px; padding: 12px 18px;
+  display: inline-flex; flex-direction: column; align-items: center; gap: 4px; background: var(--brand-softer);
+}
+.zone__body { display: flex; align-items: center; gap: 8px; font-size: 30px; }
+.zone__name { font-family: var(--font-jp); font-size: 15px; font-weight: 700; color: var(--brand-dark); }
+
+/* に vs で 공간 비교 (Priority 1) */
+.place2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.placecard {
+  border: 1px solid var(--line); border-radius: 16px; padding: 16px; background: var(--surface); text-align: center;
+}
+.placecard__tag {
+  font-family: var(--font-jp); font-size: 22px; font-weight: 700; color: var(--brand-dark); margin-bottom: 4px;
+}
+.placecard__jp { font-family: var(--font-jp); font-size: clamp(17px, 4.4vw, 21px); font-weight: 700; margin: 10px 0 2px; }
+.placecard__jp .pt { color: var(--particle); }
+.placecard__role { font-size: 13px; color: var(--ink-soft); font-weight: 700; }
+.place2__punch {
+  grid-column: 1 / -1; text-align: center; font-family: var(--font-jp);
+  font-size: clamp(17px, 4.6vw, 22px); font-weight: 700; color: var(--brand-dark);
+  background: var(--brand-soft); border-radius: 12px; padding: 14px;
+}
+.place2__punch .ko { display: block; font-family: var(--font-body); font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+
+/* Timeline (に 시간 핀) */
+.timeline { padding: 10px 6px 34px; position: relative; }
+.timeline__row {
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 2px solid var(--line-strong); padding-top: 10px; position: relative;
+}
+.timeline__tick { font-family: var(--font-jp); font-size: 16px; font-weight: 700; color: var(--ink-faint); position: relative; }
+.timeline__tick::before {
+  content: ""; position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+  width: 9px; height: 9px; border-radius: 50%; background: var(--line-strong);
+}
+.timeline__tick.on { color: var(--brand-dark); font-size: 19px; }
+.timeline__tick.on::before { background: var(--brand); width: 12px; height: 12px; top: -18px; }
+.timeline__pin {
+  position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-jp); font-size: 15px; font-weight: 700; color: var(--brand); white-space: nowrap;
+}
+
+/* 조사 역할 카드 (Priority 3) */
+.pcards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.pcard {
+  border: 1px solid var(--line); border-top: 3px solid var(--brand); border-radius: 14px;
+  padding: 14px 10px; text-align: center; background: var(--surface);
+}
+.pcard__p { font-family: var(--font-jp); font-size: 30px; font-weight: 700; color: var(--particle); }
+.pcard__ico { font-size: 18px; margin: 2px 0; }
+.pcard__role { font-size: 13px; font-weight: 700; color: var(--ink); }
+.pcard__ex { font-family: var(--font-jp); font-size: 12.5px; color: var(--ink-faint); margin-top: 6px; }
+
+/* 같은 명사, 다른 조사 (Priority 4, 인터랙티브) */
+.samenoun { text-align: center; }
+.samenoun__fixed {
+  font-family: var(--font-jp); font-size: clamp(26px, 8vw, 40px); font-weight: 700;
+  color: var(--ink); background: var(--surface-2); border-radius: 14px;
+  display: inline-block; padding: 8px 24px; margin-bottom: 14px;
+}
+.samenoun__btns { display: flex; gap: 10px; justify-content: center; margin-bottom: 16px; }
+.samenoun__btns .toggle { flex: 0 0 auto; min-width: 92px; font-family: var(--font-jp); font-size: 20px; }
+.samenoun__out {
+  background: var(--brand-softer); border: 1.5px solid var(--brand-soft);
+  border-radius: 16px; padding: 20px 16px;
+}
+.samenoun__jp { font-family: var(--font-jp); font-size: clamp(22px, 6vw, 30px); font-weight: 700; }
+.samenoun__jp .pt { color: var(--particle); }
+.samenoun__role {
+  display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 700; color: var(--brand-dark);
+  background: var(--brand-soft); border-radius: 999px; padding: 4px 14px;
+}
+.samenoun__ko { font-size: 14px; color: var(--ink-soft); margin-top: 8px; }
+
+/* 조사 결정 치트시트 (Priority 5) */
+.cheat { display: grid; gap: 8px; }
+.cheat__row {
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid var(--line); border-radius: 12px; padding: 11px 16px; background: var(--surface);
+}
+.cheat__q { font-weight: 700; font-size: 14.5px; }
+.cheat__arrow { margin-left: auto; color: var(--ink-faint); }
+.cheat__p {
+  font-family: var(--font-jp); font-size: 22px; font-weight: 700; color: var(--particle);
+  background: var(--particle-soft); border-radius: 8px; padding: 2px 14px; flex: 0 0 auto;
+}
+
+@media (max-width: 480px) {
+  .place2 { grid-template-columns: 1fr; }
+  .pcards { grid-template-columns: repeat(2, 1fr); }
+}

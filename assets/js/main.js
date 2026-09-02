@@ -312,10 +312,31 @@
     document.querySelectorAll("[data-nested]").forEach(function (root) {
       var btn = root.querySelector("[data-nested-btn]");
       if (!btn) return;
+      var label = btn.getAttribute("data-label") || "조각으로 더 잘게 나누기 →";
+      var labelOn = btn.getAttribute("data-label-on") || "다시 합치기";
       btn.addEventListener("click", function () {
         var exp = root.classList.toggle("expanded");
-        btn.textContent = exp ? "다시 합치기" : "조각으로 더 잘게 나누기 →";
+        btn.textContent = exp ? labelOn : label;
       });
+    });
+  }
+
+  /* ---------- 14. 같은 명사, 다른 조사 (に / で 등) ---------- */
+  function initSameNoun() {
+    document.querySelectorAll("[data-samenoun]").forEach(function (root) {
+      var jpEl = root.querySelector("[data-sn-jp]");
+      var roleEl = root.querySelector("[data-sn-role]");
+      var koEl = root.querySelector("[data-sn-ko]");
+      var btns = root.querySelectorAll(".toggle");
+      function apply(b) {
+        if (jpEl) jpEl.innerHTML = b.getAttribute("data-jp");
+        if (roleEl) roleEl.textContent = b.getAttribute("data-role");
+        if (koEl) koEl.textContent = b.getAttribute("data-ko");
+        btns.forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+      }
+      btns.forEach(function (b) { b.addEventListener("click", function () { apply(b); }); });
+      if (btns.length) apply(btns[0]);
     });
   }
 
@@ -334,5 +355,6 @@
     initTransformer();
     initRecall();
     initNested();
+    initSameNoun();
   });
 })();
