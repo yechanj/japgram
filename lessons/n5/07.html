@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 7 · 일본어 동사의 정체 「사전형 + 1그룹 / 2그룹 / 불규칙」 — JLPT N5 문법</title>
+  <meta name="description" content="동사의 사전형과 1그룹·2그룹·불규칙(する·来る) 구분법을 배우는 N5 문법 강의. ない형·て형·た형을 위한 기초." />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <!-- 모바일 상단바 -->
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">Lesson 7 · 동사 그룹</div>
+    <span class="topbar__prog" data-prog-txt>1 / 17</span>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo jp">動</div>
+        <div class="sidebar__title">JLPT N5 문법
+          <small>Lesson 7 · 사전형 · 동사 그룹</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#intro"><span class="num">0</span> 배우는 것</a></li>
+          <li><a href="#dict"><span class="num">1</span> 사전형이란?</a></li>
+          <li><a href="#why"><span class="num">2</span> 왜 그룹으로?</a></li>
+          <li><a href="#overview"><span class="num">3</span> 3개 그룹</a></li>
+          <li><a href="#group2"><span class="num">4</span> 2그룹</a></li>
+          <li><a href="#exception"><span class="num">5</span> いる/える 예외</a></li>
+          <li><a href="#group1"><span class="num">6</span> 1그룹</a></li>
+          <li><a href="#irregular"><span class="num">7</span> 불규칙 する/来る</a></li>
+          <li><a href="#masudict"><span class="num">8</span> ます형 ↔ 사전형</a></li>
+          <li><a href="#plain"><span class="num">9</span> 보통형 vs 정중형</a></li>
+          <li><a href="#guide"><span class="num">10</span> 그룹 판별 가이드</a></li>
+          <li><a href="#examples"><span class="num">11</span> 대표 예문</a></li>
+          <li><a href="#anatomy"><span class="num">12</span> 문장 분석</a></li>
+          <li><a href="#mistakes"><span class="num">13</span> 헷갈리는 부분</a></li>
+          <li><a href="#quiz"><span class="num">14</span> Check Quiz</a></li>
+          <li><a href="#summary"><span class="num">15</span> 핵심 · 10초 복습</a></li>
+          <li><a href="#next"><span class="num">16</span> 다음 Lesson</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <!-- 본문 -->
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">JLPT N5 Grammar · Lesson 7</div>
+          <h1>일본어 동사의 정체</h1>
+          <div class="lesson-hero__pattern jp">食べる <span class="pt">·</span> 飲む <span class="pt">·</span> する</div>
+          <div class="progress">
+            <div class="progress__bar"><div class="progress__fill"></div></div>
+            <span class="progress__txt" data-prog-txt>1 / 17</span>
+          </div>
+        </header>
+
+        <!-- ============ 0 · 배우는 것 ============ -->
+        <section id="intro" class="section">
+          <h2><span class="sec-no">00</span> 이번 강에서 배우는 것</h2>
+          <p class="lead">지금까지 <b class="jp">食べます · 飲みます</b>처럼 「ます」형을 썼지만, 사전에는 <b class="jp">食べる · 飲む · 行く</b>로 나옵니다.
+            이 형태를 <b>사전형</b>이라고 합니다.</p>
+          <ul class="goals">
+            <li>사전형이 무엇인지</li>
+            <li>동사를 왜 그룹으로 나누는지</li>
+            <li><span class="jp">1그룹 / 2그룹 / 불규칙</span> 동사를 어떻게 구별하는지</li>
+          </ul>
+          <div class="oneline">이 강을 이해해야 다음 강의 <b class="jp">ない형 · て형 · た형</b>을 만들 수 있습니다.</div>
+        </section>
+
+        <!-- ============ 1 · 사전형이란 ============ -->
+        <section id="dict" class="section">
+          <h2><span class="sec-no">01</span> 사전형이란?</h2>
+          <p>사전에서 찾는 동사의 <b>기본 형태</b>입니다.</p>
+
+          <!-- 시각화 1 · ます형 → 사전형 -->
+          <div class="figure">
+            <div class="figure__title">시각화 1 · ます형 → 사전형</div>
+            <div class="cheat">
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:18px;font-weight:700;">食べます</span><span class="cheat__arrow">→</span><span class="cheat__p jp">食べる</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:18px;font-weight:700;">飲みます</span><span class="cheat__arrow">→</span><span class="cheat__p jp">飲む</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:18px;font-weight:700;">行きます</span><span class="cheat__arrow">→</span><span class="cheat__p jp">行く</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:18px;font-weight:700;">話します</span><span class="cheat__arrow">→</span><span class="cheat__p jp">話す</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:18px;font-weight:700;">勉強します</span><span class="cheat__arrow">→</span><span class="cheat__p jp">勉強する</span></div>
+            </div>
+            <div class="figure__cap">사전형은 동사의 기본 형태이자, 앞으로 여러 문법을 만드는 <b>재료</b>입니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 2 · 왜 그룹으로 ============ -->
+        <section id="why" class="section">
+          <h2><span class="sec-no">02</span> 왜 동사를 그룹으로 나눌까?</h2>
+          <p>앞으로 <b class="jp">ない형 · て형 · た형</b>을 배웁니다. 그런데 동사마다 변화 방식이 다릅니다.</p>
+
+          <!-- 시각화 2 · 같은 문법, 다른 변화 -->
+          <div class="figure">
+            <div class="figure__title">시각화 2 · 같은 문법, 다른 변화</div>
+            <div class="vs2">
+              <div class="vs2__col is-mo">
+                <div class="vs2__head jp" style="color:var(--info)">食べる</div>
+                <div class="vs2__jp jp" style="line-height:2;">食べ<span class="chg chg--neg">ない</span><br>食べ<span class="chg">て</span><br>食べ<span class="chg">た</span></div>
+                <div class="vs2__ko">ない형 · て형 · た형</div>
+              </div>
+              <div class="vs2__col is-ha">
+                <div class="vs2__head jp">飲む</div>
+                <div class="vs2__jp jp" style="line-height:2;">飲<span class="chg chg--neg">まない</span><br>飲<span class="chg">んで</span><br>飲<span class="chg">んだ</span></div>
+                <div class="vs2__ko">ない형 · て형 · た형</div>
+              </div>
+            </div>
+            <div class="figure__cap">같은 문법을 붙여도 <b>동사 그룹에 따라 모양이 달라집니다.</b> 그래서 그룹을 나눕니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 3 · 3개 그룹 ============ -->
+        <section id="overview" class="section">
+          <h2><span class="sec-no">03</span> 일본어 동사는 크게 3종류</h2>
+
+          <!-- 핵심 시각화 3 · 3-Group Overview -->
+          <div class="figure">
+            <div class="figure__title">시각화 3 · 3-Group Overview</div>
+            <div class="groups3">
+              <div class="g3card is-g1">
+                <div class="g3card__t">Group 1</div>
+                <div class="g3card__ex jp">飲む · 書く · 話す</div>
+                <div class="g3card__d">끝 글자가 여러 방식으로 변함</div>
+              </div>
+              <div class="g3card is-g2">
+                <div class="g3card__t">Group 2</div>
+                <div class="g3card__ex jp">食べる · 見る</div>
+                <div class="g3card__d">대체로 「る」를 떼고 활용</div>
+              </div>
+              <div class="g3card is-irr">
+                <div class="g3card__t">Irregular</div>
+                <div class="g3card__ex jp">する · 来る</div>
+                <div class="g3card__d">규칙대로만 바뀌지 않음</div>
+              </div>
+            </div>
+            <div class="figure__cap">2그룹은 비교적 단순하고, 1그룹은 <b>끝 글자 변화</b>가 중요합니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 4 · 2그룹 ============ -->
+        <section id="group2" class="section">
+          <h2><span class="sec-no">04</span> 2그룹 동사부터 보자</h2>
+          <p>2그룹은 비교적 쉽습니다. 대표: <b class="jp"><span class="furi" data-yomi="たべる">食べる</span></b>(먹다) ·
+            <b class="jp"><span class="furi" data-yomi="みる">見る</span></b>(보다) ·
+            <b class="jp"><span class="furi" data-yomi="おきる">起きる</span></b>(일어나다) ·
+            <b class="jp"><span class="furi" data-yomi="ねる">寝る</span></b>(자다).</p>
+
+          <!-- 시각화 4 · 2그룹 구조 (Priority 3) -->
+          <div class="figure">
+            <div class="figure__title">시각화 4 · 「る」를 떼면 활용의 중심이 남는다</div>
+            <div style="text-align:center;">
+              <div class="slotrow" style="justify-content:center;">
+                <span class="slot-filled jp">食べ</span><span class="slot-plus">＋</span><span class="slot-filled jp" style="opacity:.4;text-decoration:line-through;">る</span>
+              </div>
+              <div class="shift__arrow">↓ 활용할 때 る 제거 ↓</div>
+              <div class="slotrow" style="justify-content:center;">
+                <span class="slot-filled jp">食べ</span><span class="slot-plus">＋</span><span class="slot-empty">ない / て / た</span>
+              </div>
+            </div>
+            <div class="figure__cap">사전형의 마지막 <b class="jp">る</b>를 떼면 <b class="jp">食べ</b>가 남고, 여기에 여러 형태가 붙습니다.</div>
+          </div>
+
+          <div class="card card--point">
+            <div class="card__label"><span class="dot"></span>2그룹은 보통 「いる / える」로 끝난다</div>
+            <p>る 앞의 음이 <b>い단</b> 또는 <b>え단</b>인 경우가 많습니다.
+              <b class="jp">食べる</b>(た<b>べ</b>る → え단) · <b class="jp">見る</b>(<b>み</b>る → い단) · <b class="jp">起きる</b>(お<b>き</b>る → い단).</p>
+          </div>
+        </section>
+
+        <!-- ============ 5 · いる/える 예외 ============ -->
+        <section id="exception" class="section">
+          <h2><span class="sec-no">05</span> 「いる / える」이면 무조건 2그룹은 아니다</h2>
+
+          <!-- 시각화 5 · Mostly, But Not Always (Priority 5) -->
+          <div class="card card--warn">
+            <div class="card__label"><span class="dot"></span>Warning · ～いる / ～える → 2그룹인 경우가 많지만 무조건은 아니다</div>
+            <p><span class="okmark jp">○ 食べる → 2그룹</span> <span class="okmark jp">○ 見る → 2그룹</span></p>
+            <p>하지만 아래 동사들은 끝이 「いる/える」처럼 보여도 <b>1그룹</b>입니다. N5에서는 대표 예외만 기억합니다.</p>
+            <p><span class="wrongmark jp">⚠ 帰る</span>(돌아가다) · <span class="wrongmark jp">⚠ 入る</span>(들어가다) ·
+              <span class="wrongmark jp">⚠ 走る</span>(달리다) · <span class="wrongmark jp">⚠ 切る</span>(자르다) — 모두 1그룹
+              <br><span style="color:var(--ink-faint);font-size:13px;">읽기 · 帰る【かえる】· 入る【はいる】· 走る【はしる】· 切る【きる】</span></p>
+          </div>
+        </section>
+
+        <!-- ============ 6 · 1그룹 ============ -->
+        <section id="group1" class="section">
+          <h2><span class="sec-no">06</span> 1그룹 동사</h2>
+          <p>1그룹은 끝 글자가 다양합니다. 대표적으로 다음처럼 끝납니다.</p>
+
+          <!-- 시각화 6 · Group 1 Endings -->
+          <div class="figure">
+            <div class="figure__title">시각화 5 · 1그룹 어미</div>
+            <div class="endlist">
+              <div class="endrow"><span class="endrow__k jp">う</span><span class="endrow__ex jp"><span class="furi" data-yomi="かう">買う</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">く</span><span class="endrow__ex jp"><span class="furi" data-yomi="かく">書く</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">ぐ</span><span class="endrow__ex jp"><span class="furi" data-yomi="およぐ">泳ぐ</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">す</span><span class="endrow__ex jp"><span class="furi" data-yomi="はなす">話す</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">つ</span><span class="endrow__ex jp"><span class="furi" data-yomi="まつ">待つ</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">ぬ</span><span class="endrow__ex jp"><span class="furi" data-yomi="しぬ">死ぬ</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">ぶ</span><span class="endrow__ex jp"><span class="furi" data-yomi="あそぶ">遊ぶ</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">む</span><span class="endrow__ex jp"><span class="furi" data-yomi="のむ">飲む</span></span></div>
+              <div class="endrow"><span class="endrow__k jp">る</span><span class="endrow__ex jp"><span class="furi" data-yomi="かえる">帰る</span></span></div>
+            </div>
+            <div class="figure__cap">1그룹은 마지막 음이 활용할 때 바뀝니다.</div>
+          </div>
+
+          <!-- 핵심 시각화 7 · Ending Shift (Priority 2) -->
+          <div class="figure">
+            <div class="figure__title">핵심 시각화 6 · Ending Shift</div>
+            <div class="shift">
+              <div class="shift__center jp"><span class="furi" data-yomi="のむ">飲む</span></div>
+              <div class="shift__arrow">↓ 마지막 음이 움직인다 ↓</div>
+              <div class="shift__rays">
+                <div class="shift__ray jp">飲<span class="chg">み</span>ます<span class="t">ます형</span></div>
+                <div class="shift__ray jp">飲<span class="chg chg--neg">ま</span>ない<span class="t">ない형</span></div>
+                <div class="shift__ray jp">飲<span class="chg">ん</span>で<span class="t">て형</span></div>
+              </div>
+            </div>
+            <div class="figure__cap">끝의 <b class="jp">む</b>가 상황에 따라 <b class="jp">み / ま / ん</b>처럼 달라집니다. <b>1그룹 = 마지막 음이 바뀐다.</b></div>
+          </div>
+        </section>
+
+        <!-- ============ 7 · 불규칙 ============ -->
+        <section id="irregular" class="section">
+          <h2><span class="sec-no">07</span> 불규칙 동사는 2개만 먼저 기억</h2>
+          <p>N5의 핵심 불규칙 동사는 두 개입니다. 따로 기억합니다.</p>
+
+          <!-- 시각화 8 · Irregular Pair -->
+          <div class="figure">
+            <div class="figure__title">시각화 7 · Irregular Pair</div>
+            <div class="vs2">
+              <div class="vs2__col is-irr" style="border-top:3px solid var(--warn);">
+                <div class="vs2__head jp" style="color:var(--warn-ink)">する</div>
+                <div class="vs2__ko">하다</div>
+                <div class="vs2__jp jp" style="margin-top:8px;">→ します</div>
+              </div>
+              <div class="vs2__col is-irr" style="border-top:3px solid var(--warn);">
+                <div class="vs2__head jp" style="color:var(--warn-ink)"><span class="furi" data-yomi="くる">来る</span></div>
+                <div class="vs2__ko">오다</div>
+                <div class="vs2__jp jp" style="margin-top:8px;">→ <span class="furi" data-yomi="きます">来ます</span></div>
+              </div>
+            </div>
+            <div class="figure__cap">읽기 · 来る【くる】→ 来ます【きます】. 이 두 동사는 규칙으로 설명되지 않으므로 통째로 익힙니다.</div>
+          </div>
+
+          <h3>「勉強する」 같은 동사도 많다</h3>
+          <p>「する」는 명사와 결합해 새로운 동사를 많이 만듭니다. (실제 일본어에서 매우 자주 사용됩니다.)</p>
+          <div class="figure">
+            <div class="figure__title">시각화 8 · Noun + する</div>
+            <div class="chunks">
+              <div class="chunk"><div class="chunk__box jp"><span class="furi" data-yomi="べんきょう">勉強</span></div><div class="chunk__cap">명사</div></div>
+              <div class="chunk"><div class="chunk__box is-pt jp">する</div><div class="chunk__cap">하다</div></div>
+              <div class="chunk"><div class="chunk__box jp" style="border-color:var(--brand)">勉強する</div><div class="chunk__cap">공부하다</div></div>
+            </div>
+            <ul class="clean">
+              <li><span class="jp"><span class="furi" data-yomi="べんきょう">勉強</span>する</span> — 공부하다</li>
+              <li><span class="jp"><span class="furi" data-yomi="うんどう">運動</span>する</span> — 운동하다</li>
+              <li><span class="jp"><span class="furi" data-yomi="りょこう">旅行</span>する</span> — 여행하다</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ 8 · ます형 ↔ 사전형 ============ -->
+        <section id="masudict" class="section">
+          <h2><span class="sec-no">08</span> ます형에서 사전형을 볼 때 주의</h2>
+          <p><b class="jp">食べます → 食べる</b>는 쉽지만, 1그룹은 끝이 바뀝니다.
+            <b>ます를 떼고 る를 붙이면 된다</b>는 규칙은 쓸 수 없습니다.</p>
+          <div class="card card--warn">
+            <div class="card__label"><span class="dot"></span>Warning</div>
+            <p><span class="wrongmark jp">× 飲みます → 飲みる</span> <span class="wrongmark jp">× 書きます → 書きる</span><br>
+              <span class="okmark jp">○ 飲む</span> <span class="okmark jp">○ 書く</span></p>
+          </div>
+
+          <!-- 시각화 10 · Match Cards -->
+          <div class="figure">
+            <div class="figure__title">시각화 9 · ます형 ↔ 사전형</div>
+            <div class="cheat">
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">食べます</span><span class="cheat__arrow">→</span><span class="cheat__p jp" style="color:var(--info);background:var(--info-soft)">食べる</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">見ます</span><span class="cheat__arrow">→</span><span class="cheat__p jp" style="color:var(--info);background:var(--info-soft)">見る</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">飲みます</span><span class="cheat__arrow">→</span><span class="cheat__p jp">飲む</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">書きます</span><span class="cheat__arrow">→</span><span class="cheat__p jp">書く</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">買います</span><span class="cheat__arrow">→</span><span class="cheat__p jp">買う</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">します</span><span class="cheat__arrow">→</span><span class="cheat__p jp" style="color:var(--warn);background:var(--warn-soft)">する</span></div>
+              <div class="cheat__row"><span class="cheat__q jp" style="font-family:var(--font-jp);font-size:17px;font-weight:700;">来ます</span><span class="cheat__arrow">→</span><span class="cheat__p jp" style="color:var(--warn);background:var(--warn-soft)">来る</span></div>
+            </div>
+            <div class="figure__cap"><span style="color:var(--info)">■</span> 2그룹 · <span style="color:var(--particle)">■</span> 1그룹 · <span style="color:var(--warn)">■</span> 불규칙</div>
+          </div>
+        </section>
+
+        <!-- ============ 9 · 보통형 vs 정중형 ============ -->
+        <section id="plain" class="section">
+          <h2><span class="sec-no">09</span> 보통형과 정중형</h2>
+
+          <!-- 시각화 11 · Polite vs Plain -->
+          <div class="figure">
+            <div class="figure__title">시각화 10 · Polite vs Plain</div>
+            <div class="vs2">
+              <div class="vs2__col is-ha">
+                <div class="vs2__head jp">食べます</div>
+                <div class="vs2__ko">정중형 — 상대에게 정중하게</div>
+              </div>
+              <div class="vs2__col is-mo">
+                <div class="vs2__head jp">食べる</div>
+                <div class="vs2__ko">보통형 / 사전형 — 문법 결합의 기본 재료</div>
+              </div>
+            </div>
+            <div class="figure__cap">둘 중 하나가 더 “정답”인 것이 아니라, <b>사용 상황과 문법 구조</b>가 다릅니다.</div>
+          </div>
+
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>사전형은 “사전에만 나오는 형태”가 아니다</div>
+            <p>앞으로 많은 문법에서 실제로 사용합니다. 예: <b class="jp">食べる前に</b>(먹기 전에) · <b class="jp">食べるのが好きです</b>(먹는 것을 좋아합니다).
+              이런 표현은 뒤에서 배웁니다.</p>
+          </div>
+
+          <div class="ex">
+            <div class="ex__jp jp"><span class="furi" data-yomi="まいにち">毎日</span>パンを食べます。 <span style="color:var(--ink-faint)">/</span> 毎日パンを食べる。</div>
+            <div class="ex__ko">매일 빵을 먹습니다. / 매일 빵을 먹는다.</div>
+            <div class="ex__reading">둘 다 가능하지만, 이 과정에서 직접 말하는 문장의 기본 출력은 <b class="jp">ます형</b>으로 유지합니다. 사전형은 <b>문법을 만드는 재료</b>로 먼저 익힙니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 10 · 그룹 판별 가이드 ============ -->
+        <section id="guide" class="section">
+          <h2><span class="sec-no">10</span> 동사 그룹을 어떻게 판단할까?</h2>
+
+          <!-- 핵심 시각화 12 · Verb Group Decision Guide (Priority 1) -->
+          <div class="figure">
+            <div class="figure__title">핵심 시각화 11 · 동사 그룹 판별 가이드</div>
+            <div class="decision">
+              <div class="decstep">
+                <div class="decstep__q"><span class="n">①</span> <span class="jp">する / 来る</span> 인가?</div>
+                <div class="decstep__row">
+                  <span class="decpill result irr">YES → <b>불규칙</b></span>
+                  <span class="decpill">NO ↓ 다음으로</span>
+                </div>
+              </div>
+              <div class="decstep">
+                <div class="decstep__q"><span class="n">②</span> <span class="jp">る</span>로 끝나는가?</div>
+                <div class="decstep__row">
+                  <span class="decpill result">NO → <b>1그룹</b></span>
+                  <span class="decpill">YES ↓ 다음으로</span>
+                </div>
+              </div>
+              <div class="decstep">
+                <div class="decstep__q"><span class="n">③</span> <span class="jp">る</span> 앞이 い단 / え단인가?</div>
+                <div class="decstep__row">
+                  <span class="decpill result">NO → <b>1그룹</b></span>
+                  <span class="decpill result g2">YES → <b>대체로 2그룹</b></span>
+                </div>
+              </div>
+              <div class="decision__note">⚠ 帰る · 入る · 走る · 切る 등 1그룹 예외 있음</div>
+            </div>
+            <div class="figure__cap">모든 동사를 규칙만으로 100% 판별하려 하지 않아도 됩니다. 단어를 외울 때 <b>그룹도 함께</b> 익히는 것이 좋습니다.</div>
+          </div>
+
+          <h3>직접 판별해보기</h3>
+          <p>동사를 보고 그룹을 먼저 생각해본 뒤, 카드를 <b>탭</b>해 확인하세요. (점수는 없는 관찰용입니다.)</p>
+          <div class="recall">
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">食べる</span>
+              <span class="recall__jp jp">2그룹 · る 앞이 え단</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">飲む</span>
+              <span class="recall__jp jp">1그룹 · む로 끝남</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">帰る</span>
+              <span class="recall__jp jp">1그룹 · る 예외!</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">来る</span>
+              <span class="recall__jp jp">불규칙</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ============ 11 · 대표 예문 ============ -->
+        <section id="examples" class="section">
+          <h2><span class="sec-no">11</span> 대표 예문</h2>
+          <div class="ex">
+            <div class="ex__no">Example 1</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="まいにち">毎日</span><span class="furi" data-yomi="あさごはん">朝ご飯</span>を<span class="furi" data-yomi="たべます">食べます</span>。</div>
+            <div class="ex__ko">매일 아침밥을 먹습니다.</div>
+            <div class="ex__reading">사전형 <b class="jp">食べる</b> → <b style="color:var(--info)">2그룹</b></div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 2</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="みず">水</span>を<span class="furi" data-yomi="のみます">飲みます</span>。</div>
+            <div class="ex__ko">물을 마십니다.</div>
+            <div class="ex__reading">읽기 · <b>水</b>【みず】 · 사전형 <b class="jp">飲む</b> → <b style="color:var(--particle)">1그룹</b></div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 3</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="にほんご">日本語</span>を<span class="furi" data-yomi="はなします">話します</span>。</div>
+            <div class="ex__ko">일본어를 말합니다.</div>
+            <div class="ex__reading">사전형 <b class="jp">話す</b> → <b style="color:var(--particle)">1그룹</b></div>
+          </div>
+          <div class="ex">
+            <div class="ex__no">Example 4</div>
+            <div class="ex__jp jp"><span class="furi" data-yomi="まいにち">毎日</span><span class="furi" data-yomi="べんきょう">勉強</span>します。</div>
+            <div class="ex__ko">매일 공부합니다.</div>
+            <div class="ex__reading">사전형 <b class="jp">勉強する</b> → <b style="color:var(--warn)">불규칙 する 계열</b></div>
+          </div>
+        </section>
+
+        <!-- ============ 12 · 문장 분석 ============ -->
+        <section id="anatomy" class="section">
+          <h2><span class="sec-no">12</span> 문장 분석 · Surface → Dictionary → Group</h2>
+
+          <!-- Sentence Anatomy -->
+          <div class="figure">
+            <div class="figure__title">시각화 12 · Sentence Anatomy</div>
+            <div class="chunks">
+              <div class="chunk"><div class="chunk__box jp">私<span class="pt">は</span></div><div class="chunk__cap">화제</div></div>
+              <div class="chunk"><div class="chunk__box jp"><span class="furi" data-yomi="まいあさ">毎朝</span></div><div class="chunk__cap">시간</div></div>
+              <div class="chunk"><div class="chunk__box jp">7<span class="furi" data-yomi="じ">時</span><span class="pt">に</span></div><div class="chunk__cap">특정 시점</div></div>
+              <div class="chunk"><div class="chunk__box jp"><span class="furi" data-yomi="あさごはん">朝ご飯</span><span class="pt">を</span></div><div class="chunk__cap">행동 대상</div></div>
+              <div class="chunk"><div class="chunk__box jp"><span class="furi" data-yomi="たべます">食べます</span></div><div class="chunk__cap">정중형 동사</div></div>
+            </div>
+            <div class="figure__cap"><span class="jp">私は毎朝7時に朝ご飯を食べます。</span></div>
+          </div>
+
+          <!-- 시각화 13 · Surface → Dictionary → Group (Priority 4) -->
+          <div class="figure">
+            <div class="figure__title">시각화 13 · Surface → Dictionary → Group</div>
+            <div class="growth">
+              <div class="growth__item"><span class="growth__badge">문장 형태</span><span class="growth__jp jp">食べます</span></div>
+              <div class="growth__arrow">↓ 사전에서 찾는 형태</div>
+              <div class="growth__item"><span class="growth__badge">사전형</span><span class="growth__jp jp">食べる</span></div>
+              <div class="growth__arrow">↓ 그룹</div>
+              <div class="growth__item is-new"><span class="growth__badge">그룹</span><span class="growth__jp" style="font-family:var(--font-body);font-weight:700;">2그룹</span></div>
+            </div>
+            <div class="growth__note">이 3단계 구조(보이는 형태 → 사전형 → 그룹)를 이후 동사 학습에서도 재사용합니다.</div>
+          </div>
+
+          <div class="coming">
+            <div class="tag">COMING SOON · 왜 그룹이 중요한가</div>
+            <div class="cjp jp">食べる→食べない · 飲む→飲まない · する→しない · 来る→来ない</div>
+            <div class="cko">같은 “하지 않는다(ない형)”인데 그룹에 따라 변화 규칙이 다릅니다. 그래서 그룹을 먼저 배웁니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ 13 · 헷갈리는 부분 ============ -->
+        <section id="mistakes" class="section">
+          <h2><span class="sec-no">13</span> 헷갈리는 부분</h2>
+          <div class="mistakes">
+            <div class="mistake">
+              <h5><span class="n">①</span> 사전형 = 무조건 반말은 아니다</h5>
+              <p>사전형은 보통체 문장 끝에도 쓰이지만, <b>동시에 여러 문법을 만드는 기본 형태</b>입니다.
+                “사전형 = 반말”이라고만 이해하면 부족합니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">②</span> る로 끝나면 무조건 2그룹이 아니다</h5>
+              <p><b class="jp">食べる</b> → 2그룹, 하지만 <b class="jp">帰る</b> → 1그룹입니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">③</span> ます를 떼면 사전형이 되는 것이 아니다</h5>
+              <p><b class="jp">飲みます</b> → <span class="wrongmark jp">× 飲み</span>가 사전형이 아닙니다. 사전형은 <span class="okmark jp">飲む</span>입니다.</p>
+            </div>
+            <div class="mistake">
+              <h5><span class="n">④</span> する 계열을 놓치지 않는다</h5>
+              <p><b class="jp">勉強する · 旅行する · 運動する</b>는 모두 <b class="jp">する</b> 활용을 따릅니다.</p>
+            </div>
+          </div>
+          <div class="card card--tip">
+            <div class="card__label"><span class="dot"></span>참고 · 문법 명칭</div>
+            <p>1그룹은 <b>五段動詞(ごだんどうし)</b>, 2그룹은 <b>一段動詞(いちだんどうし)</b>라고도 부릅니다. 명칭 자체를 외우는 데 집중할 필요는 없습니다.</p>
+          </div>
+        </section>
+
+        <!-- ============ 14 · Check Quiz ============ -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">14</span> Check Quiz</h2>
+          <p>총 9문제. 선택하면 정답/오답을 표시하고, 정답 확인 후 해설을 볼 수 있습니다.</p>
+
+          <div class="quiz">
+            <!-- Q1 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q1</span> <span class="jp">「食べます」</span>의 사전형은?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">食べ</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">食べる</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">食べむ</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">食べする</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">食べる</span></div>
+                <div class="exp"><span class="jp">食べます</span>의 사전형은 <span class="jp">食べる</span>(2그룹)입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q2</span> <span class="jp">「飲みます」</span>의 사전형은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">飲みる</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">飲める</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">飲む</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">飲する</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">飲む</span></div>
+                <div class="exp"><span class="jp">飲みます</span>는 1그룹 <span class="jp">飲む</span>의 정중형입니다. ます만 떼고 る를 붙이지 않습니다.</div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q3</span> <span class="jp">「食べる」</span>는 어느 그룹인가?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span>1그룹</li>
+                <li data-opt="2"><span class="opt">②</span>2그룹</li>
+                <li data-opt="3"><span class="opt">③</span>불규칙</li>
+                <li data-opt="4"><span class="opt">④</span>명사</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② 2그룹</div>
+                <div class="exp"><span class="jp">食べる</span>는 대표적인 2그룹 동사입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q4</span> <span class="jp">「話す」</span>는 어느 그룹인가?</div>
+              <ul class="mcq" data-answer="1">
+                <li data-opt="1"><span class="opt">①</span>1그룹</li>
+                <li data-opt="2"><span class="opt">②</span>2그룹</li>
+                <li data-opt="3"><span class="opt">③</span>불규칙</li>
+                <li data-opt="4"><span class="opt">④</span>형용사</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ① 1그룹</div>
+                <div class="exp"><span class="jp">話す</span>는 <span class="jp">す</span>로 끝나는 1그룹 동사입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q5</span> 다음 중 불규칙 동사는?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">飲む</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">食べる</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">する</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">書く</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">する</span></div>
+                <div class="exp">N5의 핵심 불규칙 동사는 <span class="jp">する / 来る</span>입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q6</span> <span class="jp">る</span> 동사에 대한 설명 중 가장 올바른 것은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">る</span>로 끝나는 동사는 모두 2그룹이다.</li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">る</span>로 끝나는 동사는 모두 1그룹이다.</li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">る</span>로 끝나고 앞이 い/え단이면 2그룹인 경우가 많지만 예외도 있다.</li>
+                <li data-opt="4"><span class="opt">④</span>동사 그룹은 활용과 관계없다.</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③</div>
+                <div class="exp">「いる/える」 형태는 2그룹인 경우가 많지만 <span class="jp">帰る</span>처럼 1그룹 예외가 있습니다.</div>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q7</span> <span class="jp">「行く」</span>의 ます형은?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">行るます</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">行います</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">行きます</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">行くます</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ <span class="jp">行きます</span></div>
+                <div class="exp"><span class="jp">行く</span>는 1그룹 동사로, 정중형은 <span class="jp">行きます</span>입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q8</span> <span class="jp">「勉強します」</span>의 사전형은?</div>
+              <ul class="mcq" data-answer="2">
+                <li data-opt="1"><span class="opt">①</span><span class="jp">勉強しる</span></li>
+                <li data-opt="2"><span class="opt">②</span><span class="jp">勉強する</span></li>
+                <li data-opt="3"><span class="opt">③</span><span class="jp">勉強む</span></li>
+                <li data-opt="4"><span class="opt">④</span><span class="jp">勉強しまする</span></li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ② <span class="jp">勉強する</span></div>
+                <div class="exp"><span class="jp">勉強する</span>는 명사 <span class="jp">勉強</span> ＋ <span class="jp">する</span> 형태의 동사입니다.</div>
+              </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qcard">
+              <div class="q"><span class="qn">Q9</span> 왜 동사를 그룹으로 나누는가?</div>
+              <ul class="mcq" data-answer="3">
+                <li data-opt="1"><span class="opt">①</span>뜻이 비슷한 동사를 묶기 위해</li>
+                <li data-opt="2"><span class="opt">②</span>발음을 쉽게 하기 위해</li>
+                <li data-opt="3"><span class="opt">③</span>활용할 때 변화 방식이 다르기 때문에</li>
+                <li data-opt="4"><span class="opt">④</span>한자 수가 다르기 때문에</li>
+              </ul>
+              <div class="qresult"></div>
+              <button class="reveal-btn" style="display:none;">해설 보기</button>
+              <div class="answer">
+                <div class="atitle">정답 ③ 활용할 때 변화 방식이 다르기 때문에</div>
+                <div class="exp"><span class="jp">食べる → 食べない</span>, <span class="jp">飲む → 飲まない</span>처럼 그룹에 따라 변화 규칙이 다릅니다.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 15 · 오늘의 핵심 + 10초 복습 ============ -->
+        <section id="summary" class="section">
+          <h2><span class="sec-no">15</span> 오늘의 핵심</h2>
+          <div class="keygrid">
+            <div class="keycard">
+              <div class="k-jp jp">사전형</div>
+              <div class="k-ko">동사의 기본 형태 · 문법의 재료</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">2그룹</div>
+              <div class="k-ko">대체로 「る」를 떼고 활용</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">1그룹</div>
+              <div class="k-ko">마지막 음이 변함</div>
+            </div>
+            <div class="keycard">
+              <div class="k-jp jp">불규칙</div>
+              <div class="k-ko">する / 来る</div>
+            </div>
+            <div class="keycard full">
+              <div class="k-jp jp">1그룹 · 2그룹 · 불규칙</div>
+              <div class="k-ko">동사 그룹은 앞으로 <b>ない형 · て형 · た형</b>을 만들기 위해 필요합니다.</div>
+            </div>
+          </div>
+
+          <h3>10초 복습</h3>
+          <p>ます형을 보고 사전형·그룹을 떠올린 뒤, 카드를 <b>탭</b>해 확인하세요.</p>
+          <div class="recall">
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">食べます</span>
+              <span class="recall__jp jp">食べる · 2그룹</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">飲みます</span>
+              <span class="recall__jp jp">飲む · 1그룹</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">話します</span>
+              <span class="recall__jp jp">話す · 1그룹</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">勉強します</span>
+              <span class="recall__jp jp">勉強する · する 계열</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+            <button class="recall__card" type="button">
+              <span class="recall__ko jp">来ます</span>
+              <span class="recall__jp jp">来る · 불규칙</span>
+              <span class="recall__hint">탭하면 정답</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ============ 16 · 다음 Lesson ============ -->
+        <section id="next" class="section">
+          <h2><span class="sec-no">16</span> 다음 Lesson과 연결</h2>
+          <div class="closing">
+            <h3>이제 사전형을 실제로 변형합니다</h3>
+            <div class="big">食べる→食べない · 飲む→飲まない · 買う→買わない</div>
+            <p>동사 그룹을 구분할 수 있게 되었으니, 처음으로 “하지 않는다(ない형)”를 만듭니다.
+              특히 1그룹은 마지막 음이 바뀌므로 규칙을 잘 이해해야 합니다.
+              <b class="jp">する→しない · 来る→来ない</b>도 함께 익힙니다.</p>
+            <div class="nextlist">
+              <div class="ni"><span class="jp">ない형</span><span class="d">하지 않는다 (그룹별 규칙)</span></div>
+              <div class="ni"><span class="jp">ません vs ない</span><span class="d">정중 부정과 보통 부정의 관계</span></div>
+            </div>
+            <a class="closing__back" href="../../index.html">← 강의 목록으로 돌아가기</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 하단 모바일 내비 -->
+  <nav class="bottomnav" aria-label="이동">
+    <a href="../../index.html"><span class="bn-ico">☰</span>강의목록</a>
+    <button type="button" data-open-toc><span class="bn-ico">📑</span>목차</button>
+    <a href="#intro"><span class="bn-ico">↑</span>맨 위로</a>
+  </nav>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

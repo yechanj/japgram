@@ -1334,3 +1334,78 @@ ul.clean li::before {
   .qa2 { grid-template-columns: 1fr; }
   .spatial__words { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* =========================================================
+   =============  LESSON 7 전용 컴포넌트  ================
+   사전형 · 1그룹 / 2그룹 / 불규칙
+   ========================================================= */
+
+/* 3-Group Overview */
+.groups3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.g3card {
+  border: 1px solid var(--line); border-radius: 14px; padding: 16px 14px; text-align: center; background: var(--surface);
+}
+.g3card.is-g1 { border-top: 3px solid var(--brand); }
+.g3card.is-g2 { border-top: 3px solid var(--info); }
+.g3card.is-irr { border-top: 3px solid var(--warn); }
+.g3card__t { font-family: var(--font-cute); font-size: 14px; font-weight: 700; }
+.g3card.is-g1 .g3card__t { color: var(--brand-dark); }
+.g3card.is-g2 .g3card__t { color: var(--info); }
+.g3card.is-irr .g3card__t { color: var(--warn); }
+.g3card__ex { font-family: var(--font-jp); font-size: clamp(17px, 4.4vw, 21px); font-weight: 700; margin: 8px 0 4px; }
+.g3card__d { font-size: 12.5px; color: var(--ink-soft); }
+
+/* Ending Shift (1그룹 끝 글자 이동) */
+.shift { text-align: center; }
+.shift__center {
+  font-family: var(--font-jp); font-size: clamp(28px, 8vw, 40px); font-weight: 700; color: var(--ink);
+  background: var(--surface-2); border-radius: 14px; display: inline-block; padding: 10px 28px; margin-bottom: 6px;
+}
+.shift__arrow { color: var(--ink-faint); font-size: 20px; margin: 6px 0; }
+.shift__rays { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.shift__ray {
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 8px; background: var(--surface);
+  font-family: var(--font-jp); font-size: clamp(17px, 4.4vw, 21px); font-weight: 700;
+}
+.shift__ray .chg { animation: none; }
+.shift__ray .t { display: block; font-family: var(--font-body); font-size: 11.5px; color: var(--ink-faint); font-weight: 500; margin-top: 6px; }
+
+/* 1그룹 어미 목록 */
+.endlist { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.endrow {
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; background: var(--surface);
+}
+.endrow__k {
+  font-family: var(--font-jp); font-size: 20px; font-weight: 700; color: var(--particle);
+  background: var(--particle-soft); border-radius: 8px; padding: 1px 12px; flex: 0 0 auto;
+}
+.endrow__ex { font-family: var(--font-jp); font-size: 17px; font-weight: 700; }
+
+/* Verb Group Decision Guide (Priority 1) */
+.decision { display: grid; gap: 10px; }
+.decstep {
+  border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; background: var(--surface);
+}
+.decstep__q { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+.decstep__q .n { color: var(--brand); font-family: var(--font-cute); margin-right: 6px; }
+.decstep__q .jp { font-family: var(--font-jp); }
+.decstep__row { display: flex; flex-wrap: wrap; gap: 8px; }
+.decpill {
+  flex: 1 1 40%; border-radius: 10px; padding: 9px 12px; font-size: 13.5px; font-weight: 700;
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--ink-soft);
+}
+.decpill b { font-family: var(--font-jp); }
+.decpill.result { background: var(--brand-soft); border-color: var(--brand); color: var(--brand-dark); }
+.decpill.result.g2 { background: var(--info-soft); border-color: var(--info); color: var(--info); }
+.decpill.result.irr { background: var(--warn-soft); border-color: var(--warn-line); color: var(--warn-ink); }
+.decision__note {
+  text-align: center; font-size: 13px; font-weight: 700; color: var(--warn-ink);
+  background: var(--warn-soft); border: 1px solid var(--warn-line); border-radius: 10px; padding: 10px 14px;
+}
+
+@media (max-width: 480px) {
+  .groups3 { grid-template-columns: 1fr; }
+  .shift__rays { grid-template-columns: 1fr; }
+  .endlist { grid-template-columns: 1fr; }
+}
