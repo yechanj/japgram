@@ -19,6 +19,8 @@
   행동 문장의 핵심 조사 `を`(대상)·`に`(시간/도착점)·`へ`(방향)·`で`(장소/수단), 특히 `に vs で`. Sentence Blocks·Action Arrow·Time Pin·に vs で 공간 비교·같은 명사 다른 조사(인터랙션)·Chunk Reading·조사 역할 카드·Cheat Sheet, 9문항 퀴즈.
 - **Lesson 5 · 어디에 무엇이 있을까? 「あります / います + に / が」**
   존재의 `あります`(사물)/`います`(사람·동물), 존재 장소의 `に`, 존재 대상의 `が`, `は vs が` 기초. あります vs います·Place→Entity→Existence·위치 표현(인터랙션)·질문→답 구조·존재 vs 행동·한 장소 세 역할·Nested Sentence, 9문항 퀴즈.
+- **Lesson 6 · 합니다 · 하지 않습니다 · 했습니다 「ます / ません / ました / ませんでした」**
+  동사 ます형의 현재/과거 × 긍정/부정. 4분면 동사 그리드·2축 맵·Sentence Transformer(동사 모드)·명사문 vs 동사문 대비·동사 어미 인터랙션·Everything Leads to the Verb, 9문항 퀴즈.
 
 ## 구조
 

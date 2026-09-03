@@ -264,15 +264,24 @@
 
   /* ---------- 11. Sentence Transformer (시제 × 긍정/부정) ---------- */
   function initTransformer() {
-    var JP_END = {
-      "now-pos": "です", "now-neg": "ではありません",
-      "past-pos": "でした", "past-neg": "ではありませんでした"
-    };
-    var KO_END = {
-      "now-pos": "입니다.", "now-neg": "이 아닙니다.",
-      "past-pos": "이었습니다.", "past-neg": "이 아니었습니다."
+    // 명사문(noun) / 동사문(verb) 어미 세트
+    var ENDINGS = {
+      noun: {
+        jp: { "now-pos": "です", "now-neg": "ではありません",
+              "past-pos": "でした", "past-neg": "ではありませんでした" },
+        ko: { "now-pos": "입니다.", "now-neg": "이 아닙니다.",
+              "past-pos": "이었습니다.", "past-neg": "이 아니었습니다." }
+      },
+      verb: {
+        jp: { "now-pos": "ます", "now-neg": "ません",
+              "past-pos": "ました", "past-neg": "ませんでした" },
+        ko: { "now-pos": "합니다.", "now-neg": "하지 않습니다.",
+              "past-pos": "했습니다.", "past-neg": "하지 않았습니다." }
+      }
     };
     document.querySelectorAll("[data-transformer]").forEach(function (root) {
+      var mode = root.getAttribute("data-mode") || "noun";
+      var set = ENDINGS[mode] || ENDINGS.noun;
       var stemJp = root.getAttribute("data-stem-jp") || "";
       var stemKo = root.getAttribute("data-stem-ko") || "";
       var jpEl = root.querySelector("[data-tr-jp]");
@@ -280,8 +289,8 @@
       var state = { tense: "now", pol: "pos" };
       function render() {
         var key = state.tense + "-" + state.pol;
-        if (jpEl) jpEl.innerHTML = stemJp + "<span class='chg'>" + JP_END[key] + "</span>";
-        if (koEl) koEl.textContent = stemKo + KO_END[key];
+        if (jpEl) jpEl.innerHTML = stemJp + "<span class='chg'>" + set.jp[key] + "</span>";
+        if (koEl) koEl.textContent = stemKo + set.ko[key];
       }
       root.querySelectorAll(".tgroup").forEach(function (g) {
         var dim = g.getAttribute("data-dim"); // "tense" or "pol"
