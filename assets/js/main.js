@@ -366,6 +366,27 @@
     });
   }
 
+  /* ---------- 16. ない형 변형기 (Group → Rule → Result) ---------- */
+  function initNaiBuilder() {
+    document.querySelectorAll("[data-naibuilder]").forEach(function (root) {
+      var gEl = root.querySelector("[data-nb-group]");
+      var cEl = root.querySelector("[data-nb-change]");
+      var rEl = root.querySelector("[data-nb-result]");
+      var koEl = root.querySelector("[data-nb-ko]");
+      var btns = root.querySelectorAll(".toggle");
+      function apply(b) {
+        if (gEl) gEl.textContent = b.getAttribute("data-group");
+        if (cEl) cEl.innerHTML = b.getAttribute("data-change");
+        if (rEl) rEl.innerHTML = b.getAttribute("data-result");
+        if (koEl) koEl.textContent = b.getAttribute("data-ko");
+        btns.forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+      }
+      btns.forEach(function (b) { b.addEventListener("click", function () { apply(b); }); });
+      if (btns.length) apply(btns[0]);
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -383,5 +404,6 @@
     initNested();
     initSameNoun();
     initSpatial();
+    initNaiBuilder();
   });
 })();
