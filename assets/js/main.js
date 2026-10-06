@@ -387,6 +387,23 @@
     });
   }
 
+  /* ---------- 17. 보통형 4종 전환기 (Verb Family Switcher) ---------- */
+  function initVerbFamily() {
+    document.querySelectorAll("[data-vfamily]").forEach(function (root) {
+      var btns = root.querySelectorAll(".toggle");
+      function apply(b) {
+        for (var i = 1; i <= 4; i++) {
+          var el = root.querySelector("[data-vf-" + i + "]");
+          if (el) el.innerHTML = b.getAttribute("data-f" + i) || "";
+        }
+        btns.forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+      }
+      btns.forEach(function (b) { b.addEventListener("click", function () { apply(b); }); });
+      if (btns.length) apply(btns[0]);
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -405,5 +422,6 @@
     initSameNoun();
     initSpatial();
     initNaiBuilder();
+    initVerbFamily();
   });
 })();
