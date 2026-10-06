@@ -1458,3 +1458,19 @@ ul.clean li::before {
 @media (max-width: 480px) {
   .vfamily__grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   =============  LESSON 10 전용 컴포넌트  ================
+   い형용사 · 형용사+명사 조합 빌더 (범용, L11 な형용사도 재사용)
+   ========================================================= */
+.pairbuilder { }
+.pbrow { margin-bottom: 14px; }
+.pbrow__label { font-family: var(--font-cute); font-size: 12.5px; font-weight: 700; color: var(--ink-faint); display: block; margin-bottom: 7px; }
+.pbrow__btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.pbrow__btns .toggle { flex: 0 0 auto; min-width: 64px; font-family: var(--font-jp); font-size: 18px; }
+.pairbuilder__out {
+  text-align: center; background: var(--brand-softer); border: 1.5px solid var(--brand-soft);
+  border-radius: 14px; padding: 18px 14px; margin-top: 4px;
+}
+.pairbuilder__jp { font-family: var(--font-jp); font-size: clamp(24px, 6.5vw, 34px); font-weight: 700; color: var(--brand-dark); display: block; }
+.pairbuilder__ko { font-size: 14px; color: var(--ink-soft); margin-top: 6px; display: block; }

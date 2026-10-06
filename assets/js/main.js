@@ -404,6 +404,40 @@
     });
   }
 
+  /* ---------- 18. 형용사+명사 조합 빌더 (범용 2축) ---------- */
+  function initPairBuilder() {
+    document.querySelectorAll("[data-pairbuilder]").forEach(function (root) {
+      var groups = root.querySelectorAll("[data-pb-group]");
+      var jpEl = root.querySelector("[data-pb-jp]");
+      var koEl = root.querySelector("[data-pb-ko]");
+      function render() {
+        var jp = "", ko = [];
+        groups.forEach(function (g) {
+          var a = g.querySelector(".toggle.active") || g.querySelector(".toggle");
+          if (a) {
+            jp += a.getAttribute("data-val") || "";
+            var k = a.getAttribute("data-ko");
+            if (k) ko.push(k);
+          }
+        });
+        if (jpEl) jpEl.textContent = jp;
+        if (koEl) koEl.textContent = ko.join(" ");
+      }
+      groups.forEach(function (g) {
+        g.querySelectorAll(".toggle").forEach(function (b) {
+          b.addEventListener("click", function () {
+            g.querySelectorAll(".toggle").forEach(function (x) { x.classList.remove("active"); });
+            b.classList.add("active");
+            render();
+          });
+        });
+        var first = g.querySelector(".toggle");
+        if (first) first.classList.add("active");
+      });
+      render();
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -423,5 +457,6 @@
     initSpatial();
     initNaiBuilder();
     initVerbFamily();
+    initPairBuilder();
   });
 })();
